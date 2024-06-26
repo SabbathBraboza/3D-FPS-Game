@@ -3485,7 +3485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8041f4b9043735544982c422786de377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 4
+  Speed: 5
   controller: {fileID: 2836004474994266225}
   Mass: 10
   GravityScale: 1
@@ -3504,7 +3504,7 @@ MonoBehaviour:
   xAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 200
+    m_MaxSpeed: 300
     m_AccelTime: 0
     m_DecelTime: 0
     m_InputAxisName: Mouse X
@@ -3522,7 +3522,7 @@ MonoBehaviour:
   yAixs:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 200
+    m_MaxSpeed: 300
     m_AccelTime: 0
     m_DecelTime: 0
     m_InputAxisName: Mouse Y

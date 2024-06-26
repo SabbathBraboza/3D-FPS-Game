@@ -11,24 +11,44 @@ namespace FPS.Weapon
 
             private void Update()
             {
-                  if(Input.GetButtonDown(KeyInput.Fire)) { 
-                        equipped.Fire();
-                  }
-                  if(equipped.fireMode == Gun.FireMode.Automatic && Input.GetButton(KeyInput.Fire)) {
-                        elapsed += Time.deltaTime;
-                        if(elapsed  > equipped.Firerate)
-                        {
-                              equipped.Fire();
-                              elapsed = 0f;
-                        }
-                  }
-                  if(Input.GetButtonUp(KeyInput.Fire))
+                switch(equipped.fireMode)
                   {
-                        elapsed = 0f;
+                        case Gun.FireMode.Semi:
+                              {
+                                    if (elapsed > 0f) elapsed = Mathf.Clamp01(elapsed - Time.deltaTime);
+                                    if(Input.GetButtonDown(KeyInput.Fire) && elapsed == 0f)
+                                    {
+                                          equipped.Fire();
+                                          elapsed = equipped.Firerate;
+                                    }
+                              }
+                              break;
+                        case Gun.FireMode.Automatic:
+                              {
+                                    if(Input.GetButtonDown(KeyInput.Fire))
+                                    {
+                                          elapsed = equipped.Firerate;
+                                    }
+                                    if(Input.GetButton(KeyInput.Fire))
+                                    {
+                                          elapsed += Time.deltaTime;
+                                          if(elapsed > equipped.Firerate)
+                                          {
+                                                equipped.Fire();
+                                                elapsed = 0f;
+                                          }
+                                    }
+                                    if(Input.GetButtonUp(KeyInput.Fire))
+                                    {
+                                          elapsed = 0f;
+                                    }
+                              }
+                              break;
                   }
                   if(Input.GetButtonDown(KeyInput.Reload))
                   {
                         equipped.Reload();
+                        print("Reloading");
                   }
             }
       }
