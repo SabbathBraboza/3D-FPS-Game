@@ -6,13 +6,19 @@ namespace TPS.Player
     public class MovementState : MonoBehaviour
     {
        [SerializeField,Readonly] public Vector3 dir;
-  
+       [SerializeField,Readonly] public float HInput, VInput;
+
         [Header("Values:")]
-        [SerializeField] private float Speed;
-        
+        public float CurrentMoveSpeed = 3;
+        public float WalkSpeed = 3, WalkBackSpeed = 2;
+        public float RunSpeed = 6, RunBackSpeed = 3;
+
+
+
         [Space(5f)]
         [Header("References:")]
         [SerializeField] private CharacterController controller;
+        public Animator anime;
 
         [Space(5f)]
         [Header("Phyics:")]
@@ -25,12 +31,15 @@ namespace TPS.Player
 
         public IdleState idle = new IdleState(); 
         public WalkState Walk = new WalkState();
-        public RunState Run = new RunState(); 
- 
+        public RunState Run = new RunState();
+
         private bool IsGrounded => controller.isGrounded;
-        
-        private void Reset() => controller = GetComponent<CharacterController>();
-   
+
+        private void Reset()
+        {
+            controller = GetComponent<CharacterController>();
+            anime = GetComponent<Animator>();
+        }
         private void Start()
         {
             SwitchState(idle);
@@ -41,6 +50,9 @@ namespace TPS.Player
             Force.y = IsGrounded ? -Mass : Force.y + GravityScale * Gravity * Time.deltaTime;
             GetDirectionMove();
 
+            anime.SetFloat("hInput",HInput);
+            anime.SetFloat("vInput",VInput);
+
             CurrentState.UpdateState(this);
         }
 
@@ -48,17 +60,15 @@ namespace TPS.Player
         {
             CurrentState = State;
             CurrentState.EnterState(this); 
-
         }
 
-        private void GetDirectionMove()
+        public void GetDirectionMove()
         {
-            float HIput, VInput;
-            HIput = Input.GetAxis("Horizontal");
+            HInput = Input.GetAxis("Horizontal");
             VInput = Input.GetAxis("Vertical");
 
-            dir = transform.forward * VInput + transform.right * HIput;
-            Vector3 move = (Force + dir.normalized) * Speed * Time.deltaTime;
+            dir = transform.forward * VInput + transform.right * HInput;
+            Vector3 move = (Force + dir.normalized) * CurrentMoveSpeed * Time.deltaTime;
             controller.Move(move);
         }
     }
