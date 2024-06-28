@@ -13,8 +13,6 @@ namespace TPS.Player
         public float WalkSpeed = 3, WalkBackSpeed = 2;
         public float RunSpeed = 6, RunBackSpeed = 3;
 
-
-
         [Space(5f)]
         [Header("References:")]
         [SerializeField] private CharacterController controller;
@@ -40,11 +38,8 @@ namespace TPS.Player
             controller = GetComponent<CharacterController>();
             anime = GetComponent<Animator>();
         }
-        private void Start()
-        {
-            SwitchState(idle);
-        }
-
+        private void Start() => SwitchState(idle);
+        
         private void Update()
         {
             Force.y = IsGrounded ? -Mass : Force.y + GravityScale * Gravity * Time.deltaTime;
