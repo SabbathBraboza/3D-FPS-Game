@@ -26,7 +26,6 @@ namespace TPS.Player
         private const float Gravity = -9.81F;
 
         private MovementBaseState CurrentState;
-
         public IdleState idle = new IdleState(); 
         public WalkState Walk = new WalkState();
         public RunState Run = new RunState();
