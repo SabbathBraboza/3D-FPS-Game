@@ -19,10 +19,8 @@ namespace FPS.Weapon
             _=> null
         };
 
-        private void Start()
-        {
-            Switch(equippedweaponType);   
-        }
+        private void Start() =>  Switch(equippedweaponType);   
+        
         private void Update()
             {
                 switch(Equipped.fireMode)
@@ -53,33 +51,20 @@ namespace FPS.Weapon
                                           }
                                     }
                                     if(Input.GetButtonUp(KeyInput.Fire))
-                                    {
-                                          elapsed = 0f;
-                                    }
+                                        elapsed = 0f;    
                               }
                               break;
                   }
-                  if(Input.GetButtonDown(KeyInput.Reload))
-                  {
-                        Equipped.Reload();
-                        print("Reloading");
-                  }
+                  if(Input.GetButtonDown(KeyInput.Reload))  Equipped.Reload();
 
             if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                Switch(WeaponType.Primary);
-            }
-            else
-            if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                Switch(WeaponType.Secondary);
-            }
-            else
-            if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                Switch(WeaponType.Melee);
-            }
+                  Switch(WeaponType.Primary);
+            
+            else if (Input.GetKeyDown(KeyCode.Alpha2))
+                   Switch(WeaponType.Secondary);
 
+            else if (Input.GetKeyDown(KeyCode.Alpha3))
+                       Switch(WeaponType.Melee);
         }
         public void Switch(WeaponType type) 
         { 
@@ -108,6 +93,5 @@ namespace FPS.Weapon
                     break;
             }
         }
-
       }
 }
