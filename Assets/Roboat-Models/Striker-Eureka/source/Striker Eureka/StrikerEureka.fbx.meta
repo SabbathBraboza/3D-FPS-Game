@@ -3,7 +3,62 @@ guid: 3051887cf19693348a3b0b3643ba27d8
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base
+    second: {fileID: 2100000, guid: d76b2209fb7f8014aa449931b081ff1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_1383012
+    second: {fileID: 2100000, guid: ca4613692583b8e44b94d1a5158113f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_1864052
+    second: {fileID: 2100000, guid: c42323078e725c3478b8d0ceeb8878d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_1899492
+    second: {fileID: 2100000, guid: c5587b15e7bcb374ab3be44ec4c093b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_1931184
+    second: {fileID: 2100000, guid: a4873687e2b7bc44cbd6ee937aa4e4fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_1939188
+    second: {fileID: 2100000, guid: 393878a81a4ce86419b7fa7d4d148adf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_1941536
+    second: {fileID: 2100000, guid: 2405c25a964aa2a47b683097641d05ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_3716
+    second: {fileID: 2100000, guid: e76f3ee2739896945aa4c24707ba4048, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_640636
+    second: {fileID: 2100000, guid: ea23f10d3af39cf4e888519b8e90c16b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_797668
+    second: {fileID: 2100000, guid: 59a744c64c7e70442a6b95881b2a1ae5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mesh_991824
+    second: {fileID: 2100000, guid: 909f84e756b3f5743b9ca756b20a139c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -35,16 +90,16 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.2
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importPhysicalCameras: 1
-    importVisibility: 1
-    importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
@@ -90,7 +145,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.2
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
