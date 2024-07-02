@@ -10,11 +10,11 @@ namespace TPS.Enemy.Animation_State
         private List<Transform> Waypoints = new List<Transform>();
         NavMeshAgent agent;
         Transform player;
-        float ChaseDistance = 5;
+        float ChaseDistance = 8;
 
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            player = GameObject.FindWithTag("Player").transform;
+            player = GameObject.FindGameObjectWithTag("Player").transform;
 
             agent = animator.GetComponent<NavMeshAgent>();
             agent.speed = 2f;

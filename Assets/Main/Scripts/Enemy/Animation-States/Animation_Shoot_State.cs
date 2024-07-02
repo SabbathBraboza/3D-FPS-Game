@@ -5,9 +5,8 @@ public class Animation_Shoot_State : StateMachineBehaviour
     Transform player;
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        player = GameObject.FindWithTag("Player").transform;
-
-    }
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+      }
     public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.transform.LookAt(player);
