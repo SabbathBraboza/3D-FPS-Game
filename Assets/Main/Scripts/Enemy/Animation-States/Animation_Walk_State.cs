@@ -9,10 +9,15 @@ namespace TPS.Enemy.Animation_State
         float timer;
         private List<Transform> Waypoints = new List<Transform>();
         NavMeshAgent agent;
+        Transform player;
+        float ChaseDistance = 5;
 
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
+            player = GameObject.FindWithTag("Player").transform;
+
             agent = animator.GetComponent<NavMeshAgent>();
+            agent.speed = 2f;
             timer = 0;
             GameObject go = GameObject.FindGameObjectWithTag("WayPoints");
             Waypoints.Clear();
@@ -28,6 +33,10 @@ namespace TPS.Enemy.Animation_State
 
         timer += Time.deltaTime;
             if(timer > 10) animator.SetBool("Walking", false);
+
+            float distance = Vector3.Distance(player.position, animator.transform.position);
+            if (distance < ChaseDistance)
+                animator.SetBool("Running", true);
 
         }
         public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
