@@ -5,7 +5,6 @@ public class Animation_Run_State : StateMachineBehaviour
 {
     NavMeshAgent agent;
     Transform Player;
-    float ChaseDistance = 5;
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -23,9 +22,7 @@ public class Animation_Run_State : StateMachineBehaviour
             animator.SetBool("Running", false);
 
         if(distance < 3)
-        {
-            animator.SetBool("Attacking", true);
-        }
+          animator.SetBool("Attacking", true);    
     }
 
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
