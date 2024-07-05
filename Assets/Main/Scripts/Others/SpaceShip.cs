@@ -5,11 +5,15 @@ public class SpaceShip : MonoBehaviour
 {
      [SerializeField] private Animator anime;
 
+    [Space(5f)]
+    [Header("Values")]
+    [SerializeField] private float landing;
+    [SerializeField] private float Flying;
       private void Reset() =>  anime = GetComponent<Animator>();
 
       private void Start()
       {
-            StartCoroutine(PlayLandingLoop());
+        StartCoroutine(PlayLandingLoop());
       }
 
       private IEnumerator PlayLandingLoop()
@@ -18,11 +22,11 @@ public class SpaceShip : MonoBehaviour
             {
                   anime.SetBool("Landing", false);
 
-               yield return new WaitForSeconds(12f);
+               yield return new WaitForSeconds(landing);
 
                   anime.SetBool("Landing", true);
 
-                  yield return new WaitForSeconds(20f); // Adjust delay as needed
+                  yield return new WaitForSeconds(Flying); // Adjust delay as needed
             };
       }
 }
