@@ -9,15 +9,19 @@ public class SpaceShip : MonoBehaviour
     [Header("Values")]
     [SerializeField] private float landing;
     [SerializeField] private float Flying;
+      [SerializeField] private float FlyDelay;
+
       private void Reset() =>  anime = GetComponent<Animator>();
 
       private void Start()
       {
-        StartCoroutine(PlayLandingLoop());
+         StartCoroutine(PlayLandingLoop());
       }
 
       private IEnumerator PlayLandingLoop()
       {
+            yield return new WaitForSeconds(FlyDelay);
+
             while (true)
             {
                   anime.SetBool("Landing", false);
