@@ -20,7 +20,6 @@ namespace FPS.Weapon
             [Header("Values:")]
             [SerializeField, Readonly] private int reserved;
             [field:SerializeField] public int MagazineSize { get; private set; }
-
             [field:SerializeField] public FireMode Mode { get; private set; }
             [SerializeField] public int Total { get; private set; } = 50;
             [field: SerializeField, Min(0.04f)] public float FireRate { get; private set; } = 0.1f;
@@ -50,7 +49,8 @@ namespace FPS.Weapon
                   _nozzle = transform.Find("Nozzle");
             }
 
-            public void Fire()
+
+        public void Fire()
             {
                   if (Current == 0)
                   {

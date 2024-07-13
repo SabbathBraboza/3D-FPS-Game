@@ -17,7 +17,12 @@ namespace FPS.Weapon
                   anime = GetComponent<Animator>();
             }
 
-            private void OnEnable()
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Y))
+                anime.SetTrigger("IsWatch");
+        }
+        private void OnEnable()
             {
                   gun.OnFire.AddListener(Onfire);
                   gun.OnReload.AddListener(Onreload);
