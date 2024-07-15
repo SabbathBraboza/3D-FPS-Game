@@ -1,6 +1,7 @@
 using Emp37.Utility;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.VFX;
 
 namespace FPS.Weapon
 {
@@ -16,6 +17,8 @@ namespace FPS.Weapon
             [SerializeField] private Transform _nozzle;
             public Transform Nozzle => _nozzle;
             [field:SerializeField] public Sprite Icon {  get; private set; }
+            [SerializeField] private GameObject MuzzleFlash;
+            [SerializeField] private VisualEffect visualEffect;
 
             [Header("Values:")]
             [SerializeField, Readonly] private int reserved;
@@ -41,14 +44,16 @@ namespace FPS.Weapon
             public UnityEvent OnReload;
             public UnityEvent<int> OnAmmo;
 
-            private void Start() => Refill();
-
+            private void Start()
+            {
+                  Refill();
+                  visualEffect = MuzzleFlash.GetComponent<VisualEffect>();
+            }
             [Button]
             private void Reset()
             {
                   _nozzle = transform.Find("Nozzle");
             }
-
 
         public void Fire()
             {
@@ -59,6 +64,7 @@ namespace FPS.Weapon
                   }
                   Current--;
                   OnFire.Invoke(Extensions.Remap(Current,0f,MagazineSize,0f,1f));
+                  PlayEffects();
                       
             }
             public void Reload()
@@ -77,6 +83,21 @@ namespace FPS.Weapon
             {
                   Current = Total;
                   reserved = 0;
+            }
+
+            private void PlayEffects()
+            {
+                
+                  if (visualEffect != null &&visualEffect.isActiveAndEnabled)
+                  {
+                        visualEffect.Play(); // Play the VisualEffect
+                        Debug.Log("Is Playing");
+                  }
+                  else
+                  {
+                        visualEffect.Stop(); // Stop the VisualEffect
+                        Debug.Log("Stoppppped");
+                  }
             }
       }
 }
