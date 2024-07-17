@@ -1,7 +1,6 @@
 using Emp37.Utility;
 using TPS.Player;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace FPS.Weapon
 {
@@ -9,11 +8,8 @@ namespace FPS.Weapon
       {
         private static readonly Vector2 Center = new Vector3(0.5f, 0.5f, 0);
 
- 
-
         [SerializeField] private new Camera camera;
         [SerializeField] private Gun Primary, Secondary , Melee;
-
         [SerializeField, Readonly] private float elapsed;
         [SerializeField,Readonly(true)] private WeaponType equippedweaponType;
 
@@ -25,16 +21,9 @@ namespace FPS.Weapon
             _=> null
         };
 
-            [Title("Events:")]
-            public UnityEvent OnSwtich;
-            public UnityEvent OnAmmoCountChange;
-
+           // [Title("Events:")]
+          
         private void Start() =>  Switch(equippedweaponType);
-
-            public void Temp()
-            {
-                  OnAmmoCountChange.Invoke();
-            }
 
             private void Reset()
             {
@@ -112,7 +101,6 @@ namespace FPS.Weapon
                     }
                     break;
                 }
-                  OnSwtich.Invoke();
         }
 
             private void Shoot()

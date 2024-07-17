@@ -1,27 +1,26 @@
 using FPS.Weapon;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-
 
 namespace FPS.UI.Weapon
 {
     public class WeaponUI : MonoBehaviour
     {
-        [SerializeField] private GunController Controller;
+        [SerializeField] private Gun gun;
         [SerializeField] private TMP_Text GunAmmo;
-        [SerializeField] private Image EqquipedGun;
 
-        public void UpdateWeaponIcon()
+        private void Reset()
         {
-                  EqquipedGun.sprite = Controller.Equipped.Icon;
-                  UpdateAmmo();
+            gun = GetComponentInParent<Gun>();  
         }
 
-            public void UpdateAmmo()
-            {
-                  var gun = Controller.Equipped;
-                  GunAmmo.text = $"{gun.Current}/{gun.MagazineSize}";
-            }
-      }
+        private void OnEnable()
+        {
+            gun.OnFire.AddListener(_ => UpdateAmmo());
+            gun.OnRefill.AddListener(UpdateAmmo);
+            gun.OnReload.AddListener(UpdateAmmo);
+        }
+
+        public void UpdateAmmo() => GunAmmo.text = $"{gun.Current}/{gun.MagazineSize}";
+    }
 }

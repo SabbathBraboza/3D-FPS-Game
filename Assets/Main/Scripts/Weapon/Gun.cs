@@ -16,7 +16,7 @@ namespace FPS.Weapon
             [Header("Reference:")]
             [SerializeField] private Transform _nozzle;
             public Transform Nozzle => _nozzle;
-            [field:SerializeField] public Sprite Icon {  get; private set; }
+
             [SerializeField] private GameObject MuzzleFlash;
             [SerializeField] private VisualEffect visualEffect;
 
@@ -34,7 +34,6 @@ namespace FPS.Weapon
                   set
                   {
                         _current = Mathf.Clamp(value, 0, MagazineSize);
-                        OnAmmo.Invoke(_current);
                   }
             }
 
@@ -42,9 +41,17 @@ namespace FPS.Weapon
             [Header("Events:")]
             public UnityEvent<float> OnFire;
             public UnityEvent OnReload;
-            public UnityEvent<int> OnAmmo;
+            public UnityEvent OnRefill;
 
-            private void Start()
+
+        private void OnDestroy()
+        {
+            OnFire.RemoveAllListeners();
+            OnReload.RemoveAllListeners();
+            OnRefill.RemoveAllListeners();
+        }
+
+        private void Start()
             {
                   Refill();
                   visualEffect = MuzzleFlash.GetComponent<VisualEffect>();
