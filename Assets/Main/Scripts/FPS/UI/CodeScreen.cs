@@ -1,12 +1,16 @@
 using UnityEngine;
 using System;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class CodeScreen : MonoBehaviour, IInteractable
 {
       [SerializeField] private InteractiveScreen screen;
+      [SerializeField] private GameObject Unlocked;
       [SerializeField] private int pass;
       [SerializeField] private bool WasEnteredCorrectly;
 
+      public UnityEvent OnUnlock;
 
       private void Update()
       {
@@ -35,6 +39,8 @@ public class CodeScreen : MonoBehaviour, IInteractable
                         if(screen.Check(pass))
                         {
                               WasEnteredCorrectly = true;
+                              OnUnlock.Invoke();
+                              Unlocked.SetActive(true);
                               enabled = false;
                         }
                   }
