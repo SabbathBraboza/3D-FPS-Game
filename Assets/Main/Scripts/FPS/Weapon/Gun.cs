@@ -1,7 +1,6 @@
 using Emp37.Utility;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.VFX;
 
 namespace FPS.Weapon
 {
@@ -15,10 +14,9 @@ namespace FPS.Weapon
 
             [Header("Reference:")]
             [SerializeField] private Transform _nozzle;
+            [SerializeField] private ParticleSystem Muzzle;
+  
             public Transform Nozzle => _nozzle;
-
-            [SerializeField] private GameObject MuzzleFlash;
-            [SerializeField] private VisualEffect visualEffect;
 
             [Header("Values:")]
             [SerializeField, Readonly] private int reserved;
@@ -51,11 +49,8 @@ namespace FPS.Weapon
             OnRefill.RemoveAllListeners();
         }
 
-        private void Start()
-            {
-                  Refill();
-                  visualEffect = MuzzleFlash.GetComponent<VisualEffect>();
-            }
+        private void Start() => Refill();
+            
             [Button]
             private void Reset()
             {
@@ -69,13 +64,14 @@ namespace FPS.Weapon
                         Reload();
                         return;
                   }
+                  Muzzle.Play();
                   Current--;
                   OnFire.Invoke(Extensions.Remap(Current,0f,MagazineSize,0f,1f));
-                  PlayEffects();
-                      
             }
+
             public void Reload()
             {
+                  Muzzle.Stop();
                   if(Current == MagazineSize ||Total == 0 )
                   {
                         return;
@@ -88,23 +84,9 @@ namespace FPS.Weapon
 
             public void Refill()
             {
+                  Muzzle.Stop();
                   Current = Total;
                   reserved = 0;
-            }
-
-            private void PlayEffects()
-            {
-                
-                  if (visualEffect != null &&visualEffect.isActiveAndEnabled)
-                  {
-                        visualEffect.Play(); // Play the VisualEffect
-                        Debug.Log("Is Playing");
-                  }
-                  else
-                  {
-                        visualEffect.Stop(); // Stop the VisualEffect
-                        Debug.Log("Stoppppped");
-                  }
             }
       }
 }

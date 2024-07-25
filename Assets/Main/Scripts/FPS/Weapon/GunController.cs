@@ -9,7 +9,7 @@ namespace FPS.Weapon
         private static readonly Vector2 Center = new Vector3(0.5f, 0.5f, 0);
 
         [SerializeField] private new Camera camera;
-        [SerializeField] private Gun Primary, Secondary , Melee;
+        [SerializeField] private Gun Primary, Secondary , MainGun;
         [SerializeField, Readonly] private float elapsed;
         [SerializeField,Readonly(true)] private WeaponType equippedweaponType;
 
@@ -17,7 +17,7 @@ namespace FPS.Weapon
         {
             WeaponType.Primary => Primary,
             WeaponType.Secondary => Secondary,
-            WeaponType.Melee => Melee,
+            WeaponType.Melee => MainGun,
             _=> null
         };
 
@@ -83,21 +83,21 @@ namespace FPS.Weapon
                     {
                         Primary.gameObject.SetActive(true);
                         Secondary.gameObject.SetActive(false);
-                        Melee.gameObject.SetActive(false);
+                        MainGun.gameObject.SetActive(false);
                     }
                     break;
                     case WeaponType.Secondary:
                     {
                         Primary.gameObject.SetActive(false);
                         Secondary.gameObject.SetActive(true);
-                        Melee.gameObject.SetActive(false);
+                        MainGun.gameObject.SetActive(false);
                     }
                     break; 
                     case WeaponType.Melee:
                     {
                         Primary.gameObject.SetActive(false);
                         Secondary.gameObject.SetActive(false);
-                        Melee.gameObject.SetActive(true);
+                        MainGun.gameObject.SetActive(true);
                     }
                     break;
                 }
