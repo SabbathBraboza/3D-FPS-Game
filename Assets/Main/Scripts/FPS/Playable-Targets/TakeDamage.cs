@@ -6,12 +6,12 @@ public class TakeDamage : MonoBehaviour, IDamge
 
     [SerializeField] private int HP = 100;
     [SerializeField] private Animator anime;
-      private BoxCollider box;
+     [SerializeField] private BoxCollider box;
 
     private void Reset()
     {
         anime = GetComponent<Animator>();
-            box = GetComponent<BoxCollider>();
+       box = GetComponent<BoxCollider>();
     }
 
     public void Damage(int damage)
