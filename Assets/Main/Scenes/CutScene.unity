@@ -518,6 +518,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: fe788ba76b1ca0d488be2fa06b76005b, type: 3}
   - Text: What are u guys talking about
     clip: {fileID: 8300000, guid: 8c8ed9b82aac2de47b48cf458a48d1b5, type: 3}
+  - Text: My guy is in trouble so i m trying to help him
+    clip: {fileID: 8300000, guid: 9fa98ec13f11c4e47a63675195043e2a, type: 3}
+  - Text: Thank you my man for helping me
+    clip: {fileID: 8300000, guid: 7e9e831bb17eeb848931637494a557a8, type: 3}
 --- !u!82 &639775824
 AudioSource:
   m_ObjectHideFlags: 0
@@ -635,6 +639,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: d9af0f7fae771c547b95bff9e11deeed, type: 2}
     - {fileID: 11400000, guid: cbcd21a26c0e43842a1699b5c958c354, type: 2}
     - {fileID: 11400000, guid: 80f6b88292003cb4b8aea8c44f253d61, type: 2}
+    - {fileID: 11400000, guid: 38dca05d2f8617c47a736e243a8be25d, type: 2}
+    - {fileID: 11400000, guid: 59469d67ed8ba3d48bd21988561a61d0, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -814,6 +820,34 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 639775823}
+          m_TargetAssemblyTypeName: Subtitle_Database, Assembly-CSharp
+          m_MethodName: BeginDialogue
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 639775823}
+          m_TargetAssemblyTypeName: Subtitle_Database, Assembly-CSharp
+          m_MethodName: BeginDialogue
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 8
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
