@@ -504,14 +504,20 @@ MonoBehaviour:
   subtitle: {fileID: 2010864146}
   audioSource: {fileID: 639775824}
   dialogue:
-  - Text: 'Yo my man How are u '
+  - Text: Yo my man How are you
     clip: {fileID: 8300000, guid: 4a04160f9c4c50643bc66b7c607ed824, type: 3}
   - Text: nothing man just chilling
     clip: {fileID: 8300000, guid: 3c3df09d30c796c47931350ad1732d31, type: 3}
-  - Text: good my man
+  - Text: That good thing my man
     clip: {fileID: 8300000, guid: 74b140c42f00eed4f9a481e5223b2c5d, type: 3}
   - Text: 'what u want to talk about '
-    clip: {fileID: 8300000, guid: 8a243c7d531a50646aee6045e2d8ca92, type: 3}
+    clip: {fileID: 8300000, guid: 25920c482ccb6d644bc15534fa9773c7, type: 3}
+  - Text: I Got a big problem
+    clip: {fileID: 8300000, guid: e900afee6a267ef41a2a6063c0f7f65d, type: 3}
+  - Text: Hi Guys
+    clip: {fileID: 8300000, guid: fe788ba76b1ca0d488be2fa06b76005b, type: 3}
+  - Text: What are u guys talking about
+    clip: {fileID: 8300000, guid: 8c8ed9b82aac2de47b48cf458a48d1b5, type: 3}
 --- !u!82 &639775824
 AudioSource:
   m_ObjectHideFlags: 0
@@ -625,6 +631,10 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 582b6c128b021bc42890de5c1dd6d923, type: 2}
     - {fileID: 11400000, guid: 60f6261546605704b81b6dd724456dd4, type: 2}
     - {fileID: 11400000, guid: 5337fca669b9202499bb719c7b0a5955, type: 2}
+    - {fileID: 11400000, guid: ac9a042313772dc4c9ebb198ceb6854a, type: 2}
+    - {fileID: 11400000, guid: d9af0f7fae771c547b95bff9e11deeed, type: 2}
+    - {fileID: 11400000, guid: cbcd21a26c0e43842a1699b5c958c354, type: 2}
+    - {fileID: 11400000, guid: 80f6b88292003cb4b8aea8c44f253d61, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -688,6 +698,110 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2010864146}
+          m_TargetAssemblyTypeName: Subtitle, Assembly-CSharp
+          m_MethodName: show
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 639775823}
+          m_TargetAssemblyTypeName: Subtitle_Database, Assembly-CSharp
+          m_MethodName: BeginDialogue
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2010864146}
+          m_TargetAssemblyTypeName: Subtitle, Assembly-CSharp
+          m_MethodName: show
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 639775823}
+          m_TargetAssemblyTypeName: Subtitle_Database, Assembly-CSharp
+          m_MethodName: BeginDialogue
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2010864146}
+          m_TargetAssemblyTypeName: Subtitle, Assembly-CSharp
+          m_MethodName: show
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 639775823}
+          m_TargetAssemblyTypeName: Subtitle_Database, Assembly-CSharp
+          m_MethodName: BeginDialogue
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2010864146}
+          m_TargetAssemblyTypeName: Subtitle, Assembly-CSharp
+          m_MethodName: show
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 639775823}
+          m_TargetAssemblyTypeName: Subtitle_Database, Assembly-CSharp
+          m_MethodName: BeginDialogue
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -27642,7 +27756,7 @@ Transform:
   - {fileID: 4310371680219062}
   - {fileID: 4595303169224928}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 85.22736, z: 0}
 --- !u!4 &4880848485268554
 Transform:
   m_ObjectHideFlags: 0
