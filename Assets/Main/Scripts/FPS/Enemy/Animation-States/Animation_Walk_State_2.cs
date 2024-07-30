@@ -33,10 +33,7 @@ namespace TPS.Enemy.Animation_State
 
                   timer += Time.deltaTime;
                   if (timer > 10) animator.SetBool("Walking", false);
-
-                  float distance = Vector3.Distance(player.position, animator.transform.position);
-                  if (distance < ChaseDistance)
-                        animator.SetBool("Running", true);
+ 
 
             }
             public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
