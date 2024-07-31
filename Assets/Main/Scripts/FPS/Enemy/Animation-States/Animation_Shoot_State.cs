@@ -12,7 +12,7 @@ public class Animation_Shoot_State : StateMachineBehaviour
         animator.transform.LookAt(player);
 
         float distance = Vector3.Distance(player.position, animator.transform.position);
-        if (distance > 3f)
+        if (distance > 4f)
             animator.SetBool("Attacking", false);
     }
 

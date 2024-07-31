@@ -18,7 +18,7 @@ public class Animation_Run_State : StateMachineBehaviour
         agent.SetDestination(Player.position);
 
         float distance = Vector3.Distance(Player.position, animator.transform.position);
-        if (distance > 15)
+        if (distance > 4)
             animator.SetBool("Running", false);
 
         if(distance < 3)

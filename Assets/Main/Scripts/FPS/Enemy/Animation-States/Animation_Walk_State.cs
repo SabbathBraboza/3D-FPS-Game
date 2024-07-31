@@ -10,7 +10,7 @@ namespace TPS.Enemy.Animation_State
         private List<Transform> Waypoints = new List<Transform>();
         NavMeshAgent agent;
         Transform player;
-        float ChaseDistance = 9;
+        float ChaseDistance =4;
 
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
@@ -32,7 +32,7 @@ namespace TPS.Enemy.Animation_State
                 agent.SetDestination(Waypoints[Random.Range(0, Waypoints.Count)].position);
 
         timer += Time.deltaTime;
-            if(timer > 10) animator.SetBool("Walking", false);
+            if(timer > 3) animator.SetBool("Walking", false);
 
             float distance = Vector3.Distance(player.position, animator.transform.position);
             if (distance < ChaseDistance)

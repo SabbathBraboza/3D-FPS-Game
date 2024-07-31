@@ -7,7 +7,7 @@ namespace TPS.Enemy.Animation_State
     {
         float timer;
        public Transform player;
-        readonly float ChaseDistance = 10;
+        readonly float ChaseDistance = 4;
 
         public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
@@ -18,7 +18,7 @@ namespace TPS.Enemy.Animation_State
         public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
             timer += Time.deltaTime;
-            if (timer > 5)
+            if (timer > 3)
                  animator.SetBool("Walking", true);
 
             float distance = Vector3.Distance(player.position, animator.transform.position);
