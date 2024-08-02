@@ -33,16 +33,11 @@ namespace FPS.Weapon
                   gun.OnReload.RemoveListener(Onreload);
             }
 
-            private void Onfire(float Value)
-            {
-                  anime.SetTrigger(Hash.Shoot);
-                  print(Value);
-            }
+            private void Onfire(float Value) => anime.SetTrigger(Hash.Shoot);
+            
 
-            private void Onreload()
-            {
-                  anime.SetBool(Hash.Reload, true);
-            }
+            private void Onreload() => anime.SetBool(Hash.Reload, true);
+            
 
       }  
 }
