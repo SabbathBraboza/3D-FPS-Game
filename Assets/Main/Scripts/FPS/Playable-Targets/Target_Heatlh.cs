@@ -1,10 +1,9 @@
-using System;
 using TPS.Player;
 using UnityEngine;
 
 public class Target_Heatlh : MonoBehaviour,IDamge
 {
-    [SerializeField] private Targets Targets;
+    [SerializeField] private GameObject PopUpText;
     [SerializeField] private GameObject target;
     [SerializeField] private int HP;
     private Targets_Manager targets;
@@ -13,14 +12,11 @@ public class Target_Heatlh : MonoBehaviour,IDamge
     {
         HP -= damage;
         if(HP < damage)
-        {
-            Destroy(target);
-            Targets.enabled = false;
-
-            if(targets != null)
-            {
-                targets.EnableSpawning();
-            }
+        { 
+          Destroy(target);
+           
+          if(targets != null) targets.EnableSpawning();
+           
         }
     }
 
@@ -28,5 +24,11 @@ public class Target_Heatlh : MonoBehaviour,IDamge
     {
         int collisionDamage = 25;
         Damage(collisionDamage);
+        ShowPopUp();
+    }
+
+    private void ShowPopUp()
+    {
+        Instantiate(PopUpText, transform.position, Quaternion.identity);
     }
 }
