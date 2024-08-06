@@ -2,9 +2,7 @@ using UnityEngine;
 
 public class StateMachine : MonoBehaviour
 {
-      private BaseState ActiveState;
-
-
+      public BaseState ActiveState;
 
       private void Update()
       {
@@ -13,7 +11,8 @@ public class StateMachine : MonoBehaviour
 
       public void Initialise()
       {
-            
+       
+        ChangeState(new PatrollerState());
       }
 
       public void ChangeState(BaseState state)
@@ -31,7 +30,7 @@ public class StateMachine : MonoBehaviour
             {
                   ActiveState.StateMachine = this;
 
-                  // Assign State enemy class
+                  ActiveState.enemy = GetComponent<Robot_Enemy>();
                   ActiveState.Enter();
             }
       }
