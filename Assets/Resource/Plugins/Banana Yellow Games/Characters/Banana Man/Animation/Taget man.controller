@@ -8,7 +8,19 @@ AnimatorController:
   m_PrefabAsset: {fileID: 0}
   m_Name: Taget man
   serializedVersion: 5
-  m_AnimatorParameters: []
+  m_AnimatorParameters:
+  - m_Name: Speed
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: Attack
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -22,14 +34,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &1690013330505374801
+--- !u!1102 &1973268227899641639
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Idle
+  m_Name: Idle_Guard_AR
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -42,7 +54,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 177c340e3ca07ad4580054bb27e70dd1, type: 3}
+  m_Motion: {fileID: 7400000, guid: 21a805ef27ad7ef42904fff42be01ba6, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -58,8 +70,8 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 1690013330505374801}
-    m_Position: {x: 200.06796, y: 202.96631, z: 0}
+    m_State: {fileID: 1973268227899641639}
+    m_Position: {x: 200, y: 240, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -69,4 +81,4 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 220, y: 100, z: 0}
   m_ExitPosition: {x: 220, y: 40, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 1690013330505374801}
+  m_DefaultState: {fileID: 1973268227899641639}
