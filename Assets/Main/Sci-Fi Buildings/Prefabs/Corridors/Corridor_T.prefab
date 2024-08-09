@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 425674}
   - component: {fileID: 3363962}
   - component: {fileID: 2340558}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: floor_2_no_lattice_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 462864}
   - component: {fileID: 3377640}
   - component: {fileID: 2359782}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: floor_2_no_lattice_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 409386}
   - component: {fileID: 3359100}
   - component: {fileID: 2363692}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: floor_2_no_lattice_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -903,8 +903,8 @@ GameObject:
   - component: {fileID: 6583416}
   - component: {fileID: 20551086}
   - component: {fileID: 6582234209428327690}
-  m_Layer: 7
-  m_Name: floor_2_no_lattice
+  m_Layer: 9
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2240,8 +2240,8 @@ GameObject:
   - component: {fileID: 6574196}
   - component: {fileID: 20540978}
   - component: {fileID: 2375494916400815902}
-  m_Layer: 7
-  m_Name: floor_2_no_lattice (1)
+  m_Layer: 9
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2339,8 +2339,8 @@ GameObject:
   - component: {fileID: 6550116}
   - component: {fileID: 20584304}
   - component: {fileID: 8957028351929273674}
-  m_Layer: 7
-  m_Name: floor_2_no_lattice (2)
+  m_Layer: 9
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2561,7 +2561,7 @@ GameObject:
   - component: {fileID: 420462}
   - component: {fileID: 3370214}
   - component: {fileID: 2359154}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: floor_2_no_lattice_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2645,7 +2645,7 @@ GameObject:
   - component: {fileID: 450464}
   - component: {fileID: 3372482}
   - component: {fileID: 2352916}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: floor_2_no_lattice_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2835,7 +2835,7 @@ GameObject:
   - component: {fileID: 431548}
   - component: {fileID: 3300090}
   - component: {fileID: 2397568}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: floor_2_no_lattice_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3170,7 +3170,7 @@ GameObject:
   - component: {fileID: 446206}
   - component: {fileID: 3322186}
   - component: {fileID: 2364854}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: floor_2_no_lattice_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3694,7 +3694,7 @@ GameObject:
   - component: {fileID: 440392}
   - component: {fileID: 3370754}
   - component: {fileID: 2328362}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: floor_2_no_lattice_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3779,8 +3779,8 @@ GameObject:
   - component: {fileID: 6504258}
   - component: {fileID: 20597068}
   - component: {fileID: 8940967556573064172}
-  m_Layer: 7
-  m_Name: floor_2_no_lattice (3)
+  m_Layer: 9
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

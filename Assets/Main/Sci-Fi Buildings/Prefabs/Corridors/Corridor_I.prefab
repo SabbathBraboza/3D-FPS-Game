@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 20563618}
   - component: {fileID: 8836427869927639838}
   m_Layer: 7
-  m_Name: floor_2_no_lattice
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1004,7 +1004,7 @@ GameObject:
   - component: {fileID: 3313410}
   - component: {fileID: 2321348}
   m_Layer: 7
-  m_Name: floor_2_no_lattice_LOD0
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
