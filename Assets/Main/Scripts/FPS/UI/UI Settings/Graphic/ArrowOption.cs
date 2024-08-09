@@ -21,6 +21,7 @@ public class ArrowOption : MonoBehaviour
         set
         {
             this.value = Mathf.Clamp(value, 0, Options.Length - 1);
+            Current.text = Options[this.value];
             OnValueChange.Invoke(this.value);
         }
     }
@@ -39,15 +40,7 @@ public class ArrowOption : MonoBehaviour
         Pervious.onClick.RemoveListener(GoPervious);
     }
 
-    private void GoNext()
-    {
-        Value++;
-        Current.text = Options[Value];
-    }
+    private void GoNext() => Value++;
 
-    private void GoPervious()
-    {
-        Value--;
-        Current.text = Options[Value];
-    }
+    private void GoPervious() => Value--;
 }

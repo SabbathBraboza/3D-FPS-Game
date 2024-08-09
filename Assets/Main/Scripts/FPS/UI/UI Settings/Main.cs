@@ -7,13 +7,11 @@ public class Main : MonoBehaviour
 
     public UnityEvent OnInitialize;
 
-    private void OnEnable()
-    {
-        OnInitialize.Invoke();
-    }
-
     private void Start()
     {
-          
+        OnInitialize.Invoke();
+        HandleQuality();
     }
+
+    public void HandleQuality() => QualitySettings.SetQualityLevel(settings.QualityIndex); 
 }

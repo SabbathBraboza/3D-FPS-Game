@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67a82f2b7a818b4ead10b2cb1fda6ae, type: 3}
   m_Name: New Settings
   m_EditorClassIdentifier: 
-  ResolutionIndex: 0
+  ResolutionIndex: 2
+  QualityIndex: 0
+  FPSCounter: 1

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Settings : ScriptableObject
 {
     public int ResolutionIndex;
+    public int QualityIndex;
 
     public bool FPSCounter;
 
