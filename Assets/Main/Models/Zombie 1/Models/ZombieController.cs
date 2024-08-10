@@ -45,8 +45,7 @@ public class ZombieController : MonoBehaviour
                   RandomPointReached = false;
                   if ((dist <= AttackDistance))
                   {
-                        Attack(true);
-                        zombieAttack.AttackZombie();
+                         Attack(true);
                   }
                   else
                   {
