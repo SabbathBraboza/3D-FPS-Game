@@ -7,6 +7,7 @@ public class Targets_Manager : MonoBehaviour
     [SerializeField] private GameObject TargetPerfab;
     [SerializeField] private int TargetsPerWave = 3;
     [SerializeField] private float TimeBetweenWaves = 5f;
+      [SerializeField] private int TotalWavesToSpawn;
     [SerializeField] private Transform[] SpawnPoints;
     private Targets targets;
 
@@ -24,24 +25,28 @@ public class Targets_Manager : MonoBehaviour
             StartCoroutine(SpawnWave());
     }
 
-    private IEnumerator SpawnWave()
-    {
-        IsSpawning = true;
+      private IEnumerator SpawnWave()
+      {
+            while (WaveNumber < TotalWavesToSpawn)
+            {
+                  IsSpawning = true;
 
-        WaveNumber++;
-        Debug.Log("Wave" + WaveNumber);
+                  WaveNumber++;
+                  Debug.Log("Wave" + WaveNumber);
 
-        for(int i = 0; i < TargetsPerWave; i++)
-        {
-            SpawnTarget();
-            yield return new WaitForSeconds(1f);
-        }
+                  for (int i = 0; i < TargetsPerWave; i++)
+                  {
+                        SpawnTarget();
+                        yield return new WaitForSeconds(1f);
+                  }
 
-        yield return new WaitForSeconds(TimeBetweenWaves);
-         IsSpawning =false;
-    }
+                  yield return new WaitForSeconds(TimeBetweenWaves);
+                  IsSpawning = false;
+            }
+            Debug.Log("All Waves Have Ended GG");
+      }
 
-     private void SpawnTarget()
+      private void SpawnTarget()
     {
         int SpawnIndex = Random.Range(0, SpawnPoints.Length);
         Transform SpawnPoint = SpawnPoints[SpawnIndex];

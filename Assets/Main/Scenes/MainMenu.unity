@@ -5079,7 +5079,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8246034111001118606}
-  - component: {fileID: 6346749316665705238}
+  - component: {fileID: 8246034111001118607}
   m_Layer: 0
   m_Name: Screen Resolution
   m_TagString: Untagged
@@ -5132,7 +5132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &4555225340050542233
 GameObject:
   m_ObjectHideFlags: 0
@@ -5672,17 +5672,7 @@ MonoBehaviour:
   m_ItemImage: {fileID: 0}
   m_Value: 0
   m_Options:
-    m_Options:
-    - m_Text: Option A
-      m_Image: {fileID: 0}
-    - m_Text: Option B
-      m_Image: {fileID: 0}
-    - m_Text: Option C
-      m_Image: {fileID: 0}
-    - m_Text: Option D
-      m_Image: {fileID: 0}
-    - m_Text: Option E
-      m_Image: {fileID: 0}
+    m_Options: []
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6485,7 +6475,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Option A
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48204bad33e04624a99e2778fb598d31, type: 2}
   m_sharedMaterial: {fileID: 7747645799462522011, guid: 48204bad33e04624a99e2778fb598d31, type: 2}
@@ -6512,7 +6502,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.7
+  m_fontSize: 18
   m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7068,20 +7058,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Main: {fileID: 1124260370}
   Option: {fileID: 375113474454627013}
---- !u!114 &6346749316665705238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4431457779294641977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b3d8b6b5a77ba448a81024cee53bcca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Main: {fileID: 1124260370}
-  dropdown: {fileID: 4762768057800383131}
 --- !u!1 &6353783547961655908
 GameObject:
   m_ObjectHideFlags: 0
@@ -8084,6 +8060,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4431457779294641977}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8246034111001118607}
+        m_TargetAssemblyTypeName: Resolution, Assembly-CSharp
+        m_MethodName: OnvalueChange
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &7596048672602382269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8563,6 +8563,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8246034111001118607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4431457779294641977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b3d8b6b5a77ba448a81024cee53bcca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Main: {fileID: 1124260370}
+  dropdown: {fileID: 4762768057800383131}
 --- !u!114 &8252757742632242599
 MonoBehaviour:
   m_ObjectHideFlags: 0

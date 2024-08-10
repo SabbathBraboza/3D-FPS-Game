@@ -10,6 +10,7 @@ public class Resolution : Base<int>
     {
         base.OnEnable();
         dropdown.onValueChanged.AddListener(OnvalueChange);
+        Initialize();
     }
     protected override void OnDisable()
     {
@@ -22,6 +23,7 @@ public class Resolution : Base<int>
         dropdown.ClearOptions();
         dropdown.AddOptions(Settings.Resolutions.Select(res => $"{res.width} X { res.height} - {res.refreshRateRatio}").ToList());
 
+            print("gg");
         dropdown.value = Settings.ResolutionIndex;
     }
 
