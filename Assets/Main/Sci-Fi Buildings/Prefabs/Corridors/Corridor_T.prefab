@@ -180,7 +180,6 @@ GameObject:
   m_Component:
   - component: {fileID: 445740}
   - component: {fileID: 6419814}
-  - component: {fileID: 20507706}
   m_Layer: 7
   m_Name: window_big
   m_TagString: Untagged
@@ -227,29 +226,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e7280697ebb11a7429fff43396523803, type: 3}
---- !u!205 &20507706
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 104398}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.06442261, y: 1.9812827, z: -0.7792165}
-  m_Size: 4.128845
-  m_FadeMode: 0
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.2441799
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2319412}
-  - screenRelativeHeight: 0.037201747
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2353152}
-  m_Enabled: 1
 --- !u!1 &108746
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,7 +542,6 @@ GameObject:
   m_Component:
   - component: {fileID: 497272}
   - component: {fileID: 6570690}
-  - component: {fileID: 20530126}
   m_Layer: 7
   m_Name: floor_2 (3)
   m_TagString: Untagged
@@ -612,29 +587,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 0.19608502, z: 4}
   m_Center: {x: 0, y: 0.0940137, z: 0}
---- !u!205 &20530126
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118216}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.0940137, z: 0}
-  m_Size: 4
-  m_FadeMode: 0
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.19803587
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2322640}
-  - screenRelativeHeight: 0.037201747
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2373080}
-  m_Enabled: 1
 --- !u!1 &120802
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,7 +853,6 @@ GameObject:
   m_Component:
   - component: {fileID: 465566}
   - component: {fileID: 6583416}
-  - component: {fileID: 20551086}
   - component: {fileID: 6582234209428327690}
   m_Layer: 9
   m_Name: Roof
@@ -948,29 +899,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 0.19608502, z: 4}
   m_Center: {x: 0, y: 0.0940137, z: 0}
---- !u!205 &20551086
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125048}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.0940137, z: 0}
-  m_Size: 4
-  m_FadeMode: 0
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.18903612
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2359782}
-  - screenRelativeHeight: 0.037201747
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2359154}
-  m_Enabled: 1
 --- !u!114 &6582234209428327690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,7 +1094,6 @@ GameObject:
   m_Component:
   - component: {fileID: 422090}
   - component: {fileID: 6538828}
-  - component: {fileID: 20540734}
   m_Layer: 7
   m_Name: floor_2
   m_TagString: Untagged
@@ -1212,29 +1139,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 0.19608502, z: 4}
   m_Center: {x: 0, y: 0.0940137, z: 0}
---- !u!205 &20540734
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 127808}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.0940137, z: 0}
-  m_Size: 4
-  m_FadeMode: 0
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.20718575
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2381556}
-  - screenRelativeHeight: 0.037201747
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2342526}
-  m_Enabled: 1
 --- !u!1 &131032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,7 +1235,6 @@ GameObject:
   m_Component:
   - component: {fileID: 444178}
   - component: {fileID: 6598168}
-  - component: {fileID: 20547580}
   m_Layer: 7
   m_Name: floor_2 (2)
   m_TagString: Untagged
@@ -1377,29 +1280,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 0.19608502, z: 4}
   m_Center: {x: 0, y: 0.0940137, z: 0}
---- !u!205 &20547580
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136406}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.0940137, z: 0}
-  m_Size: 4
-  m_FadeMode: 0
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.23834294
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2345164}
-  - screenRelativeHeight: 0.037201747
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2336790}
-  m_Enabled: 1
 --- !u!1 &136902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,7 +1290,6 @@ GameObject:
   m_Component:
   - component: {fileID: 485892}
   - component: {fileID: 6458502}
-  - component: {fileID: 20557930}
   m_Layer: 7
   m_Name: window_big
   m_TagString: Untagged
@@ -1457,29 +1336,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e7280697ebb11a7429fff43396523803, type: 3}
---- !u!205 &20557930
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136902}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.06442261, y: 1.9812827, z: -0.7792165}
-  m_Size: 4.128845
-  m_FadeMode: 0
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.2025851
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2344386}
-  - screenRelativeHeight: 0.037201747
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2376320}
-  m_Enabled: 1
 --- !u!1 &137822
 GameObject:
   m_ObjectHideFlags: 0
@@ -2238,7 +2094,6 @@ GameObject:
   m_Component:
   - component: {fileID: 401436}
   - component: {fileID: 6574196}
-  - component: {fileID: 20540978}
   - component: {fileID: 2375494916400815902}
   m_Layer: 9
   m_Name: Roof
@@ -2285,29 +2140,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 0.19608502, z: 4}
   m_Center: {x: 0, y: 0.0940137, z: 0}
---- !u!205 &20540978
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 161694}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.0940137, z: 0}
-  m_Size: 4
-  m_FadeMode: 0
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.16239968
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2364854}
-  - screenRelativeHeight: 0.037201747
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2352916}
-  m_Enabled: 1
 --- !u!114 &2375494916400815902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2337,7 +2169,6 @@ GameObject:
   m_Component:
   - component: {fileID: 497466}
   - component: {fileID: 6550116}
-  - component: {fileID: 20584304}
   - component: {fileID: 8957028351929273674}
   m_Layer: 9
   m_Name: Roof
@@ -2384,29 +2215,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 0.19608502, z: 4}
   m_Center: {x: 0, y: 0.0940137, z: 0}
---- !u!205 &20584304
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 163760}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.0940137, z: 0}
-  m_Size: 4
-  m_FadeMode: 0
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.19836167
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2397568}
-  - screenRelativeHeight: 0.037201747
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2328362}
-  m_Enabled: 1
 --- !u!114 &8957028351929273674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2436,7 +2244,6 @@ GameObject:
   m_Component:
   - component: {fileID: 463682}
   - component: {fileID: 6461812}
-  - component: {fileID: 20584106}
   m_Layer: 7
   m_Name: window_big_corner
   m_TagString: Untagged
@@ -2483,29 +2290,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9d05b15ebc07ee144a18b52300023b0b, type: 3}
---- !u!205 &20584106
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 165418}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.00000071525574, y: 2.0000002, z: -2.0000005}
-  m_Size: 4.0000014
-  m_FadeMode: 0
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.27699226
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2313974}
-  - screenRelativeHeight: 0.037201747
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2310246}
-  m_Enabled: 1
 --- !u!1 &165962
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,7 +2788,6 @@ GameObject:
   m_Component:
   - component: {fileID: 492442}
   - component: {fileID: 6405548}
-  - component: {fileID: 20533134}
   m_Layer: 7
   m_Name: window_big
   m_TagString: Untagged
@@ -3051,29 +2834,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e7280697ebb11a7429fff43396523803, type: 3}
---- !u!205 &20533134
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177596}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.06442261, y: 1.9812827, z: -0.7792165}
-  m_Size: 4.128845
-  m_FadeMode: 0
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.2441799
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2327034}
-  - screenRelativeHeight: 0.037201747
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2391700}
-  m_Enabled: 1
 --- !u!1 &182138
 GameObject:
   m_ObjectHideFlags: 0
@@ -3422,7 +3182,6 @@ GameObject:
   m_Component:
   - component: {fileID: 414944}
   - component: {fileID: 6409742}
-  - component: {fileID: 20530248}
   m_Layer: 7
   m_Name: window_big_corner
   m_TagString: Untagged
@@ -3469,29 +3228,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9d05b15ebc07ee144a18b52300023b0b, type: 3}
---- !u!205 &20530248
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 190842}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 2.0000005, y: 2.0000002, z: 0.00000047683716}
-  m_Size: 4.000002
-  m_FadeMode: 0
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.20030408
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2341208}
-  - screenRelativeHeight: 0.037201747
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2366884}
-  m_Enabled: 1
 --- !u!1 &190928
 GameObject:
   m_ObjectHideFlags: 0
@@ -3777,7 +3513,6 @@ GameObject:
   m_Component:
   - component: {fileID: 476088}
   - component: {fileID: 6504258}
-  - component: {fileID: 20597068}
   - component: {fileID: 8940967556573064172}
   m_Layer: 9
   m_Name: Roof
@@ -3824,29 +3559,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 0.19608502, z: 4}
   m_Center: {x: 0, y: 0.0940137, z: 0}
---- !u!205 &20597068
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 198914}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.0940137, z: 0}
-  m_Size: 4
-  m_FadeMode: 0
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.19836167
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2340558}
-  - screenRelativeHeight: 0.037201747
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2363692}
-  m_Enabled: 1
 --- !u!114 &8940967556573064172
 MonoBehaviour:
   m_ObjectHideFlags: 0

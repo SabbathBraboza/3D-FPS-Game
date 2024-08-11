@@ -151,7 +151,6 @@ GameObject:
   m_Component:
   - component: {fileID: 412114}
   - component: {fileID: 6549326}
-  - component: {fileID: 20558096}
   m_Layer: 7
   m_Name: floor_2
   m_TagString: Untagged
@@ -197,29 +196,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 0.19608502, z: 4}
   m_Center: {x: 0, y: 0.0940137, z: 0}
---- !u!205 &20558096
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106800}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.0940137, z: 0}
-  m_Size: 4
-  m_FadeMode: 0
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.4119806
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2320744}
-  - screenRelativeHeight: 0.037201747
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2315938}
-  m_Enabled: 1
 --- !u!1 &116882
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +375,6 @@ GameObject:
   m_Component:
   - component: {fileID: 442654}
   - component: {fileID: 6592584}
-  - component: {fileID: 20553864}
   - component: {fileID: 5753321384926305057}
   m_Layer: 7
   m_Name: floor_2_no_lattice
@@ -446,29 +421,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4, y: 0.19608502, z: 4}
   m_Center: {x: 0, y: 0.0940137, z: 0}
---- !u!205 &20553864
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155084}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0.0940137, z: 0}
-  m_Size: 4
-  m_FadeMode: 0
-  m_AnimateCrossFading: 1
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.4119806
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2373416}
-  - screenRelativeHeight: 0.037201747
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 2382630}
-  m_Enabled: 1
 --- !u!114 &5753321384926305057
 MonoBehaviour:
   m_ObjectHideFlags: 0
