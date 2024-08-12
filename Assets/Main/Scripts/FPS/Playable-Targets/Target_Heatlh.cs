@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Target_Heatlh : MonoBehaviour,IDamge
 {
-    [SerializeField] private GameObject PopUpText;
+    
     [SerializeField] private GameObject target;
     [SerializeField] private int HP;
     private Targets_Manager targets;
