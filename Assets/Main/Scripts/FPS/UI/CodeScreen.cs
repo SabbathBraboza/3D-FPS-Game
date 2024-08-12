@@ -1,13 +1,16 @@
 using UnityEngine;
 using System;
 using UnityEngine.Events;
-using UnityEngine.UI;
+
 
 public class CodeScreen : MonoBehaviour, IInteractable
 {
       [SerializeField] private InteractiveScreen screen;
-      [SerializeField] private GameObject Unlocked;
+      
       [SerializeField] private int pass;
+
+     private new readonly MeshRenderer renderer;
+
       [SerializeField] private bool WasEnteredCorrectly;
 
       public UnityEvent OnUnlock;
@@ -40,7 +43,7 @@ public class CodeScreen : MonoBehaviour, IInteractable
                         {
                               WasEnteredCorrectly = true;
                               OnUnlock.Invoke();
-                              Unlocked.SetActive(true);
+                               renderer.sharedMaterial = Resources.Load<Material>("Material/Unlock");
                               enabled = false;
                         }
                   }
