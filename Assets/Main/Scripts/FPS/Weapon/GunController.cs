@@ -66,6 +66,7 @@ namespace FPS.Weapon
                   }
                   if(Input.GetButtonDown(KeyInput.Reload))  Equipped.Reload();
 
+            // // Handle weapon switching via number keys
             if (Input.GetKeyDown(KeyCode.Alpha1))
                   Switch(WeaponType.Primary);
             
@@ -74,6 +75,34 @@ namespace FPS.Weapon
 
             else if (Input.GetKeyDown(KeyCode.Alpha3))
                        Switch(WeaponType.Melee);
+
+            // Handle weapon switching via mouse scroll
+            float scroll = Input.GetAxis("Mouse ScrollWheel");
+            if (scroll != 0f)
+            {
+                if (scroll > 0f)
+                {
+                    // Scroll up, switch to the next weapon
+                    if (equippedweaponType == WeaponType.Primary)
+                        Switch(WeaponType.Secondary);
+                    else if (equippedweaponType == WeaponType.Secondary)
+                        Switch(WeaponType.Melee);
+                    else
+                        Switch(WeaponType.Primary);
+                   Equipped.Muzzle.Stop();
+                }
+                else
+                {
+                    // Scroll down, switch to the previous weapon
+                    if (equippedweaponType == WeaponType.Primary)
+                        Switch(WeaponType.Melee);
+                    else if (equippedweaponType == WeaponType.Secondary)
+                        Switch(WeaponType.Primary);
+                    else
+                        Switch(WeaponType.Secondary);
+                    Equipped.Muzzle.Stop();
+                }
+            }
         }
         public void Switch(WeaponType type) 
         { 

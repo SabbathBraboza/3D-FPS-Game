@@ -10,6 +10,7 @@ public class TakeDamage : MonoBehaviour, IDamge
 
     public void Damage(int damage)
     {
+        damage = 25;
         HP -= damage;
         if (HP < damage)
         {

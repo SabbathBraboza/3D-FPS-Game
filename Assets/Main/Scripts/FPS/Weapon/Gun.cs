@@ -14,7 +14,7 @@ namespace FPS.Weapon
 
             [Header("Reference:")]
             [SerializeField] private Transform _nozzle;
-            [SerializeField] private ParticleSystem Muzzle;
+            [field:SerializeField] public ParticleSystem Muzzle { get; private set; }
   
             public Transform Nozzle => _nozzle;
 
