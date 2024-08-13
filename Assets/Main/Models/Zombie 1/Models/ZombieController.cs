@@ -31,7 +31,7 @@ public class ZombieController : MonoBehaviour
       private void Start()
       {
             Target = GameObject.FindGameObjectWithTag("Player");
-            spawnEnemy = GameObject.FindWithTag("WayPoints");
+            spawnEnemy = GameObject.FindWithTag("Spawn");
             AttackDistance = 3;
       }
       private void Update()
