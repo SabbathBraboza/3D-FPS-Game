@@ -17,7 +17,6 @@ public class TakeDamage : MonoBehaviour, IDamge
           zombieController.enabled = false;
          anime.SetTrigger("Dead");
           box.enabled = false;
-        
         }
         else   anime.SetTrigger("Hurt");
     }

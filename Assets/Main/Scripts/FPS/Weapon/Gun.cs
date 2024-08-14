@@ -18,6 +18,10 @@ namespace FPS.Weapon
   
             public Transform Nozzle => _nozzle;
 
+            [SerializeField] private Transform ShellEjectionPoint;
+
+           [SerializeField] private GameObject ShellPrefab;
+
             [Header("Values:")]
             [SerializeField, Readonly] private int reserved;
             [field:SerializeField] public int MagazineSize { get; private set; }
@@ -87,6 +91,37 @@ namespace FPS.Weapon
                   Muzzle.Stop();
                   Current = Total;
                   reserved = 0;
+            }
+            private void SpawnAndEjectShell()
+            {
+                  if (ShellPrefab != null && ShellEjectionPoint != null)
+                  {
+                        var shell = Instantiate(ShellPrefab, ShellEjectionPoint.position, ShellEjectionPoint.rotation);
+                        Rigidbody shellRb = shell.GetComponent<Rigidbody>();
+
+                        if (shellRb != null)
+                        {
+                              // Generate a random direction with slight variations
+                              Vector3 randomDirection = ShellEjectionPoint.right + new Vector3(
+                                  Random.Range(-0.08f, 0.08f), // Random variation in x direction
+                                  Random.Range(-0.02f, 0.08f), // Random variation in y direction
+                                  Random.Range(-0.08f, 0.08f)  // Random variation in z direction
+                              ).normalized;
+
+                              // Apply random torque to simulate spinning effect
+                              Vector3 randomTorque = new Vector3(
+                                  Random.Range(-20.0f, 20.0f), // Random torque around x-axis
+                                  Random.Range(-20.0f, 20.0f), // Random torque around y-axis
+                                  Random.Range(-20.0f, 20.0f)  // Random torque around z-axis
+                              );
+
+                              // Apply torque and force with randomness
+                              shellRb.AddTorque(randomTorque, ForceMode.Impulse);
+
+                              float randomForce = Random.Range(4.0f, 5.0f); // Random force between 4 and 5
+                              shellRb.AddForce(randomDirection * randomForce, ForceMode.Impulse);
+                        }
+                  }
             }
       }
 }

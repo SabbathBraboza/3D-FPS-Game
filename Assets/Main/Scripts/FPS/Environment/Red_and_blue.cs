@@ -2,20 +2,29 @@ using UnityEngine;
 
 public class Red_and_blue : MonoBehaviour
 {
-      [SerializeField] private Light RedLight;
-      [SerializeField] private Light BlueLight;
+      [SerializeField] private Light redLight;
+      [SerializeField] private Light blueLight;
 
-      private Vector3 RedTemp;
-      private Vector3 BlueTemp;
+      [SerializeField] private float rotationSpeed = 30f; // Degrees per second
 
-      [SerializeField] private int Speed;
+      private Vector3 redLightRotation;
+      private Vector3 blueLightRotation;
+
+      private void Start()
+      {
+            // Initialize rotations
+            redLightRotation = redLight.transform.eulerAngles;
+            blueLightRotation = blueLight.transform.eulerAngles;
+      }
 
       private void Update()
       {
-            RedTemp.y += Speed + Time.deltaTime;
-            BlueTemp.y += Speed + Time.deltaTime;
+            // Rotate red light clockwise
+            redLightRotation.y += rotationSpeed * Time.deltaTime;
+            redLight.transform.eulerAngles = redLightRotation;
 
-            RedLight.transform.eulerAngles = RedTemp;
-            BlueLight.transform.eulerAngles = BlueTemp;
+            // Rotate blue light counterclockwise
+            blueLightRotation.y -= rotationSpeed * Time.deltaTime;
+            blueLight.transform.eulerAngles = blueLightRotation;
       }
 }
