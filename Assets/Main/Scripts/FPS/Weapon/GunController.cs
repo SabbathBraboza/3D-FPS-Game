@@ -1,5 +1,6 @@
 using Emp37.Utility;
 using TPS.Player;
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 namespace FPS.Weapon
@@ -8,10 +9,9 @@ namespace FPS.Weapon
       {
         private static readonly Vector2 Center = new Vector3(0.5f, 0.5f, 0);
 
-        [SerializeField] private new Camera camera;
+        [field:SerializeField] public new Camera camera { get; private set;}
         [SerializeField] private Gun Primary, Secondary , MainGun;
         [SerializeField, Readonly] private float elapsed;
-
         [SerializeField,Readonly(true)] private WeaponType equippedweaponType;
 
         public Gun Equipped => equippedweaponType switch
@@ -133,13 +133,12 @@ namespace FPS.Weapon
                 }
         }
 
-            private void Shoot()
+            public void Shoot()
             {
                   Equipped.Fire();
                   Ray ray = camera.ViewportPointToRay(Center);
-               
                   if(Physics.Raycast(ray,out RaycastHit info ,camera.farClipPlane))
-                  { 
+                  {
                         if(info.collider != null && info.collider.TryGetComponent(out IDamge ID))
                         {
                             ID.Damage(Equipped.Damage);

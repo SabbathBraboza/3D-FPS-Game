@@ -4,6 +4,6 @@ public class BulletDestory : MonoBehaviour
 {
       private void Update()
       {
-            Destroy(gameObject,1f);
+            Destroy(gameObject,0.5f);
       }
 }
