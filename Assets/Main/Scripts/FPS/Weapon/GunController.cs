@@ -11,6 +11,7 @@ namespace FPS.Weapon
         [SerializeField] private new Camera camera;
         [SerializeField] private Gun Primary, Secondary , MainGun;
         [SerializeField, Readonly] private float elapsed;
+
         [SerializeField,Readonly(true)] private WeaponType equippedweaponType;
 
         public Gun Equipped => equippedweaponType switch
@@ -136,11 +137,13 @@ namespace FPS.Weapon
             {
                   Equipped.Fire();
                   Ray ray = camera.ViewportPointToRay(Center);
+               
                   if(Physics.Raycast(ray,out RaycastHit info ,camera.farClipPlane))
-                  {
+                  { 
                         if(info.collider != null && info.collider.TryGetComponent(out IDamge ID))
                         {
-                              ID.Damage(Equipped.Damage);
+                            ID.Damage(Equipped.Damage);
+
                         }
                   }
             }

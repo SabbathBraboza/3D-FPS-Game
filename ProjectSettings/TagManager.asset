@@ -6,6 +6,7 @@ TagManager:
   tags:
   - WayPoints
   - WayPoints2
+  - Spawn
   layers:
   - Default
   - TransparentFX

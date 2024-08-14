@@ -1,317 +1,869 @@
 fileFormatVersion: 2
 guid: fe092fb393b504f439d14af01331097e
-timeCreated: 1530498582
-licenseType: Store
 ModelImporter:
-  serializedVersion: 19
-  fileIDToRecycleName:
-    100000: Bip001
-    100002: Bip001 Footsteps
-    100004: Bip001 Head
-    100006: Bip001 HeadNub
-    100008: Bip001 L Calf
-    100010: Bip001 L Clavicle
-    100012: Bip001 L Finger0
-    100014: Bip001 L Finger0Nub
-    100016: Bip001 L Foot
-    100018: Bip001 L Forearm
-    100020: Bip001 L Hand
-    100022: Bip001 L Thigh
-    100024: Bip001 L Toe0
-    100026: Bip001 L Toe0Nub
-    100028: Bip001 L UpperArm
-    100030: Bip001 Neck
-    100032: Bip001 Pelvis
-    100034: Bip001 Ponytail1
-    100036: Bip001 Ponytail1Nub
-    100038: Bip001 R Calf
-    100040: Bip001 R Clavicle
-    100042: Bip001 R Finger0
-    100044: Bip001 R Finger0Nub
-    100046: Bip001 R Foot
-    100048: Bip001 R Forearm
-    100050: Bip001 R Hand
-    100052: Bip001 R Thigh
-    100054: Bip001 R Toe0
-    100056: Bip001 R Toe0Nub
-    100058: Bip001 R UpperArm
-    100060: Bip001 Spine
-    100062: //RootNode
-    100064: Zombie_03_body
-    100066: Zombie_03_head
-    100068: Zombie_01_body
-    100070: Zombie_01_head
-    100072: TZ_M_body_A
-    100074: TZ_M_body_B
-    100076: TZ_M_body_C
-    100078: TZ_M_body_D
-    100080: TZ_M_body_E
-    100082: TZ_M_body_F
-    100084: TZ_M_body_G
-    100086: TZ_M_body_H
-    100088: TZ_M_body_I
-    100090: TZ_M_body_J
-    100092: TZ_M_body_K
-    100094: TZ_M_body_L
-    100096: TZ_M_body_M
-    100098: TZ_M_body_N
-    100100: TZ_M_body_O
-    100102: TZ_M_body_P
-    100104: TZ_M_body_Q
-    100106: TZ_M_head_A
-    100108: TZ_M_head_B
-    100110: TZ_M_head_C
-    100112: TZ_M_head_D
-    100114: TZ_M_head_E
-    100116: TZ_M_head_F
-    100118: TZ_M_head_G
-    100120: TZ_M_head_H
-    100122: TZ_M_head_I
-    100124: TZ_M_head_J
-    100126: TZ_M_head_K
-    100128: TZ_M_head_L
-    100130: TZ_M_legs_A
-    100132: TZ_M_legs_B
-    100134: TZ_M_legs_C
-    100136: TZ_M_legs_D
-    100138: TZ_M_legs_E
-    100140: TZ_M_legs_F
-    100142: TZ_M_legs_G
-    100144: TZ_M_legs_H
-    100146: TZ_M_legs_I
-    100148: TZ_M_legs_J
-    100150: TZ_M_legs_K
-    100152: TZ_M_legs_L
-    100154: TZ_M_legs_M
-    100156: TZ_M_legs_N
-    100158: TZ_M_singlemesh_01
-    100160: TZ_M_infected_02
-    400000: Bip001
-    400002: Bip001 Footsteps
-    400004: Bip001 Head
-    400006: Bip001 HeadNub
-    400008: Bip001 L Calf
-    400010: Bip001 L Clavicle
-    400012: Bip001 L Finger0
-    400014: Bip001 L Finger0Nub
-    400016: Bip001 L Foot
-    400018: Bip001 L Forearm
-    400020: Bip001 L Hand
-    400022: Bip001 L Thigh
-    400024: Bip001 L Toe0
-    400026: Bip001 L Toe0Nub
-    400028: Bip001 L UpperArm
-    400030: Bip001 Neck
-    400032: Bip001 Pelvis
-    400034: Bip001 Ponytail1
-    400036: Bip001 Ponytail1Nub
-    400038: Bip001 R Calf
-    400040: Bip001 R Clavicle
-    400042: Bip001 R Finger0
-    400044: Bip001 R Finger0Nub
-    400046: Bip001 R Foot
-    400048: Bip001 R Forearm
-    400050: Bip001 R Hand
-    400052: Bip001 R Thigh
-    400054: Bip001 R Toe0
-    400056: Bip001 R Toe0Nub
-    400058: Bip001 R UpperArm
-    400060: Bip001 Spine
-    400062: //RootNode
-    400064: Zombie_03_body
-    400066: Zombie_03_head
-    400068: Zombie_01_body
-    400070: Zombie_01_head
-    400072: TZ_M_body_A
-    400074: TZ_M_body_B
-    400076: TZ_M_body_C
-    400078: TZ_M_body_D
-    400080: TZ_M_body_E
-    400082: TZ_M_body_F
-    400084: TZ_M_body_G
-    400086: TZ_M_body_H
-    400088: TZ_M_body_I
-    400090: TZ_M_body_J
-    400092: TZ_M_body_K
-    400094: TZ_M_body_L
-    400096: TZ_M_body_M
-    400098: TZ_M_body_N
-    400100: TZ_M_body_O
-    400102: TZ_M_body_P
-    400104: TZ_M_body_Q
-    400106: TZ_M_head_A
-    400108: TZ_M_head_B
-    400110: TZ_M_head_C
-    400112: TZ_M_head_D
-    400114: TZ_M_head_E
-    400116: TZ_M_head_F
-    400118: TZ_M_head_G
-    400120: TZ_M_head_H
-    400122: TZ_M_head_I
-    400124: TZ_M_head_J
-    400126: TZ_M_head_K
-    400128: TZ_M_head_L
-    400130: TZ_M_legs_A
-    400132: TZ_M_legs_B
-    400134: TZ_M_legs_C
-    400136: TZ_M_legs_D
-    400138: TZ_M_legs_E
-    400140: TZ_M_legs_F
-    400142: TZ_M_legs_G
-    400144: TZ_M_legs_H
-    400146: TZ_M_legs_I
-    400148: TZ_M_legs_J
-    400150: TZ_M_legs_K
-    400152: TZ_M_legs_L
-    400154: TZ_M_legs_M
-    400156: TZ_M_legs_N
-    400158: TZ_M_singlemesh_01
-    400160: TZ_M_infected_02
-    4300000: Zombie_03_body
-    4300002: Zombie_03_head
-    4300004: Zombie_01_body
-    4300006: Zombie_01_head
-    4300008: TZ_M_legs_A
-    4300010: TZ_M_head_A
-    4300012: TZ_M_legs_E
-    4300014: TZ_M_head_J
-    4300016: TZ_M_legs_D
-    4300018: TZ_M_head_E
-    4300020: TZ_M_head_D
-    4300022: TZ_M_legs_B
-    4300024: TZ_M_head_F
-    4300026: TZ_M_legs_K
-    4300028: TZ_M_head_G
-    4300030: TZ_M_body_C
-    4300032: TZ_M_legs_C
-    4300034: TZ_M_head_C
-    4300036: TZ_M_head_B
-    4300038: TZ_M_head_I
-    4300040: TZ_M_head_K
-    4300042: TZ_M_legs_F
-    4300044: TZ_M_head_H
-    4300046: TZ_M_body_P
-    4300048: TZ_M_head_L
-    4300050: TZ_M_body_A
-    4300052: TZ_M_body_G
-    4300054: TZ_M_body_D
-    4300056: TZ_M_body_J
-    4300058: TZ_M_body_B
-    4300060: TZ_M_legs_I
-    4300062: TZ_M_body_K
-    4300064: TZ_M_body_F
-    4300066: TZ_M_body_N
-    4300068: TZ_M_body_H
-    4300070: TZ_M_body_I
-    4300072: TZ_M_body_O
-    4300074: TZ_M_body_M
-    4300076: TZ_M_body_Q
-    4300078: TZ_M_body_E
-    4300080: TZ_M_body_L
-    4300082: TZ_M_legs_G
-    4300084: TZ_M_legs_H
-    4300086: TZ_M_legs_J
-    4300088: TZ_M_legs_L
-    4300090: TZ_M_legs_M
-    4300092: TZ_M_legs_N
-    4300094: TZ_M_singlemesh_01
-    4300096: TZ_M_infected_02
-    9500000: //RootNode
-    13700000: Zombie_03_body
-    13700002: Zombie_03_head
-    13700004: Zombie_01_body
-    13700006: Zombie_01_head
-    13700008: TZ_M_body_A
-    13700010: TZ_M_body_B
-    13700012: TZ_M_body_C
-    13700014: TZ_M_body_D
-    13700016: TZ_M_body_E
-    13700018: TZ_M_body_F
-    13700020: TZ_M_body_G
-    13700022: TZ_M_body_H
-    13700024: TZ_M_body_I
-    13700026: TZ_M_body_J
-    13700028: TZ_M_body_K
-    13700030: TZ_M_body_L
-    13700032: TZ_M_body_M
-    13700034: TZ_M_body_N
-    13700036: TZ_M_body_O
-    13700038: TZ_M_body_P
-    13700040: TZ_M_body_Q
-    13700042: TZ_M_head_A
-    13700044: TZ_M_head_B
-    13700046: TZ_M_head_C
-    13700048: TZ_M_head_D
-    13700050: TZ_M_head_E
-    13700052: TZ_M_head_F
-    13700054: TZ_M_head_G
-    13700056: TZ_M_head_H
-    13700058: TZ_M_head_I
-    13700060: TZ_M_head_J
-    13700062: TZ_M_head_K
-    13700064: TZ_M_head_L
-    13700066: TZ_M_legs_A
-    13700068: TZ_M_legs_B
-    13700070: TZ_M_legs_C
-    13700072: TZ_M_legs_D
-    13700074: TZ_M_legs_E
-    13700076: TZ_M_legs_F
-    13700078: TZ_M_legs_G
-    13700080: TZ_M_legs_H
-    13700082: TZ_M_legs_I
-    13700084: TZ_M_legs_J
-    13700086: TZ_M_legs_K
-    13700088: TZ_M_legs_L
-    13700090: TZ_M_legs_M
-    13700092: TZ_M_legs_N
-    13700094: TZ_M_singlemesh_01
-    13700096: TZ_M_infected_02
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Bip001
+  - first:
+      1: 100002
+    second: Bip001 Footsteps
+  - first:
+      1: 100004
+    second: Bip001 Head
+  - first:
+      1: 100006
+    second: Bip001 HeadNub
+  - first:
+      1: 100008
+    second: Bip001 L Calf
+  - first:
+      1: 100010
+    second: Bip001 L Clavicle
+  - first:
+      1: 100012
+    second: Bip001 L Finger0
+  - first:
+      1: 100014
+    second: Bip001 L Finger0Nub
+  - first:
+      1: 100016
+    second: Bip001 L Foot
+  - first:
+      1: 100018
+    second: Bip001 L Forearm
+  - first:
+      1: 100020
+    second: Bip001 L Hand
+  - first:
+      1: 100022
+    second: Bip001 L Thigh
+  - first:
+      1: 100024
+    second: Bip001 L Toe0
+  - first:
+      1: 100026
+    second: Bip001 L Toe0Nub
+  - first:
+      1: 100028
+    second: Bip001 L UpperArm
+  - first:
+      1: 100030
+    second: Bip001 Neck
+  - first:
+      1: 100032
+    second: Bip001 Pelvis
+  - first:
+      1: 100034
+    second: Bip001 Ponytail1
+  - first:
+      1: 100036
+    second: Bip001 Ponytail1Nub
+  - first:
+      1: 100038
+    second: Bip001 R Calf
+  - first:
+      1: 100040
+    second: Bip001 R Clavicle
+  - first:
+      1: 100042
+    second: Bip001 R Finger0
+  - first:
+      1: 100044
+    second: Bip001 R Finger0Nub
+  - first:
+      1: 100046
+    second: Bip001 R Foot
+  - first:
+      1: 100048
+    second: Bip001 R Forearm
+  - first:
+      1: 100050
+    second: Bip001 R Hand
+  - first:
+      1: 100052
+    second: Bip001 R Thigh
+  - first:
+      1: 100054
+    second: Bip001 R Toe0
+  - first:
+      1: 100056
+    second: Bip001 R Toe0Nub
+  - first:
+      1: 100058
+    second: Bip001 R UpperArm
+  - first:
+      1: 100060
+    second: Bip001 Spine
+  - first:
+      1: 100062
+    second: //RootNode
+  - first:
+      1: 100064
+    second: Zombie_03_body
+  - first:
+      1: 100066
+    second: Zombie_03_head
+  - first:
+      1: 100068
+    second: Zombie_01_body
+  - first:
+      1: 100070
+    second: Zombie_01_head
+  - first:
+      1: 100072
+    second: TZ_M_body_A
+  - first:
+      1: 100074
+    second: TZ_M_body_B
+  - first:
+      1: 100076
+    second: TZ_M_body_C
+  - first:
+      1: 100078
+    second: TZ_M_body_D
+  - first:
+      1: 100080
+    second: TZ_M_body_E
+  - first:
+      1: 100082
+    second: TZ_M_body_F
+  - first:
+      1: 100084
+    second: TZ_M_body_G
+  - first:
+      1: 100086
+    second: TZ_M_body_H
+  - first:
+      1: 100088
+    second: TZ_M_body_I
+  - first:
+      1: 100090
+    second: TZ_M_body_J
+  - first:
+      1: 100092
+    second: TZ_M_body_K
+  - first:
+      1: 100094
+    second: TZ_M_body_L
+  - first:
+      1: 100096
+    second: TZ_M_body_M
+  - first:
+      1: 100098
+    second: TZ_M_body_N
+  - first:
+      1: 100100
+    second: TZ_M_body_O
+  - first:
+      1: 100102
+    second: TZ_M_body_P
+  - first:
+      1: 100104
+    second: TZ_M_body_Q
+  - first:
+      1: 100106
+    second: TZ_M_head_A
+  - first:
+      1: 100108
+    second: TZ_M_head_B
+  - first:
+      1: 100110
+    second: TZ_M_head_C
+  - first:
+      1: 100112
+    second: TZ_M_head_D
+  - first:
+      1: 100114
+    second: TZ_M_head_E
+  - first:
+      1: 100116
+    second: TZ_M_head_F
+  - first:
+      1: 100118
+    second: TZ_M_head_G
+  - first:
+      1: 100120
+    second: TZ_M_head_H
+  - first:
+      1: 100122
+    second: TZ_M_head_I
+  - first:
+      1: 100124
+    second: TZ_M_head_J
+  - first:
+      1: 100126
+    second: TZ_M_head_K
+  - first:
+      1: 100128
+    second: TZ_M_head_L
+  - first:
+      1: 100130
+    second: TZ_M_legs_A
+  - first:
+      1: 100132
+    second: TZ_M_legs_B
+  - first:
+      1: 100134
+    second: TZ_M_legs_C
+  - first:
+      1: 100136
+    second: TZ_M_legs_D
+  - first:
+      1: 100138
+    second: TZ_M_legs_E
+  - first:
+      1: 100140
+    second: TZ_M_legs_F
+  - first:
+      1: 100142
+    second: TZ_M_legs_G
+  - first:
+      1: 100144
+    second: TZ_M_legs_H
+  - first:
+      1: 100146
+    second: TZ_M_legs_I
+  - first:
+      1: 100148
+    second: TZ_M_legs_J
+  - first:
+      1: 100150
+    second: TZ_M_legs_K
+  - first:
+      1: 100152
+    second: TZ_M_legs_L
+  - first:
+      1: 100154
+    second: TZ_M_legs_M
+  - first:
+      1: 100156
+    second: TZ_M_legs_N
+  - first:
+      1: 100158
+    second: TZ_M_singlemesh_01
+  - first:
+      1: 100160
+    second: TZ_M_infected_02
+  - first:
+      4: 400000
+    second: Bip001
+  - first:
+      4: 400002
+    second: Bip001 Footsteps
+  - first:
+      4: 400004
+    second: Bip001 Head
+  - first:
+      4: 400006
+    second: Bip001 HeadNub
+  - first:
+      4: 400008
+    second: Bip001 L Calf
+  - first:
+      4: 400010
+    second: Bip001 L Clavicle
+  - first:
+      4: 400012
+    second: Bip001 L Finger0
+  - first:
+      4: 400014
+    second: Bip001 L Finger0Nub
+  - first:
+      4: 400016
+    second: Bip001 L Foot
+  - first:
+      4: 400018
+    second: Bip001 L Forearm
+  - first:
+      4: 400020
+    second: Bip001 L Hand
+  - first:
+      4: 400022
+    second: Bip001 L Thigh
+  - first:
+      4: 400024
+    second: Bip001 L Toe0
+  - first:
+      4: 400026
+    second: Bip001 L Toe0Nub
+  - first:
+      4: 400028
+    second: Bip001 L UpperArm
+  - first:
+      4: 400030
+    second: Bip001 Neck
+  - first:
+      4: 400032
+    second: Bip001 Pelvis
+  - first:
+      4: 400034
+    second: Bip001 Ponytail1
+  - first:
+      4: 400036
+    second: Bip001 Ponytail1Nub
+  - first:
+      4: 400038
+    second: Bip001 R Calf
+  - first:
+      4: 400040
+    second: Bip001 R Clavicle
+  - first:
+      4: 400042
+    second: Bip001 R Finger0
+  - first:
+      4: 400044
+    second: Bip001 R Finger0Nub
+  - first:
+      4: 400046
+    second: Bip001 R Foot
+  - first:
+      4: 400048
+    second: Bip001 R Forearm
+  - first:
+      4: 400050
+    second: Bip001 R Hand
+  - first:
+      4: 400052
+    second: Bip001 R Thigh
+  - first:
+      4: 400054
+    second: Bip001 R Toe0
+  - first:
+      4: 400056
+    second: Bip001 R Toe0Nub
+  - first:
+      4: 400058
+    second: Bip001 R UpperArm
+  - first:
+      4: 400060
+    second: Bip001 Spine
+  - first:
+      4: 400062
+    second: //RootNode
+  - first:
+      4: 400064
+    second: Zombie_03_body
+  - first:
+      4: 400066
+    second: Zombie_03_head
+  - first:
+      4: 400068
+    second: Zombie_01_body
+  - first:
+      4: 400070
+    second: Zombie_01_head
+  - first:
+      4: 400072
+    second: TZ_M_body_A
+  - first:
+      4: 400074
+    second: TZ_M_body_B
+  - first:
+      4: 400076
+    second: TZ_M_body_C
+  - first:
+      4: 400078
+    second: TZ_M_body_D
+  - first:
+      4: 400080
+    second: TZ_M_body_E
+  - first:
+      4: 400082
+    second: TZ_M_body_F
+  - first:
+      4: 400084
+    second: TZ_M_body_G
+  - first:
+      4: 400086
+    second: TZ_M_body_H
+  - first:
+      4: 400088
+    second: TZ_M_body_I
+  - first:
+      4: 400090
+    second: TZ_M_body_J
+  - first:
+      4: 400092
+    second: TZ_M_body_K
+  - first:
+      4: 400094
+    second: TZ_M_body_L
+  - first:
+      4: 400096
+    second: TZ_M_body_M
+  - first:
+      4: 400098
+    second: TZ_M_body_N
+  - first:
+      4: 400100
+    second: TZ_M_body_O
+  - first:
+      4: 400102
+    second: TZ_M_body_P
+  - first:
+      4: 400104
+    second: TZ_M_body_Q
+  - first:
+      4: 400106
+    second: TZ_M_head_A
+  - first:
+      4: 400108
+    second: TZ_M_head_B
+  - first:
+      4: 400110
+    second: TZ_M_head_C
+  - first:
+      4: 400112
+    second: TZ_M_head_D
+  - first:
+      4: 400114
+    second: TZ_M_head_E
+  - first:
+      4: 400116
+    second: TZ_M_head_F
+  - first:
+      4: 400118
+    second: TZ_M_head_G
+  - first:
+      4: 400120
+    second: TZ_M_head_H
+  - first:
+      4: 400122
+    second: TZ_M_head_I
+  - first:
+      4: 400124
+    second: TZ_M_head_J
+  - first:
+      4: 400126
+    second: TZ_M_head_K
+  - first:
+      4: 400128
+    second: TZ_M_head_L
+  - first:
+      4: 400130
+    second: TZ_M_legs_A
+  - first:
+      4: 400132
+    second: TZ_M_legs_B
+  - first:
+      4: 400134
+    second: TZ_M_legs_C
+  - first:
+      4: 400136
+    second: TZ_M_legs_D
+  - first:
+      4: 400138
+    second: TZ_M_legs_E
+  - first:
+      4: 400140
+    second: TZ_M_legs_F
+  - first:
+      4: 400142
+    second: TZ_M_legs_G
+  - first:
+      4: 400144
+    second: TZ_M_legs_H
+  - first:
+      4: 400146
+    second: TZ_M_legs_I
+  - first:
+      4: 400148
+    second: TZ_M_legs_J
+  - first:
+      4: 400150
+    second: TZ_M_legs_K
+  - first:
+      4: 400152
+    second: TZ_M_legs_L
+  - first:
+      4: 400154
+    second: TZ_M_legs_M
+  - first:
+      4: 400156
+    second: TZ_M_legs_N
+  - first:
+      4: 400158
+    second: TZ_M_singlemesh_01
+  - first:
+      4: 400160
+    second: TZ_M_infected_02
+  - first:
+      43: 4300000
+    second: Zombie_03_body
+  - first:
+      43: 4300002
+    second: Zombie_03_head
+  - first:
+      43: 4300004
+    second: Zombie_01_body
+  - first:
+      43: 4300006
+    second: Zombie_01_head
+  - first:
+      43: 4300008
+    second: TZ_M_legs_A
+  - first:
+      43: 4300010
+    second: TZ_M_head_A
+  - first:
+      43: 4300012
+    second: TZ_M_legs_E
+  - first:
+      43: 4300014
+    second: TZ_M_head_J
+  - first:
+      43: 4300016
+    second: TZ_M_legs_D
+  - first:
+      43: 4300018
+    second: TZ_M_head_E
+  - first:
+      43: 4300020
+    second: TZ_M_head_D
+  - first:
+      43: 4300022
+    second: TZ_M_legs_B
+  - first:
+      43: 4300024
+    second: TZ_M_head_F
+  - first:
+      43: 4300026
+    second: TZ_M_legs_K
+  - first:
+      43: 4300028
+    second: TZ_M_head_G
+  - first:
+      43: 4300030
+    second: TZ_M_body_C
+  - first:
+      43: 4300032
+    second: TZ_M_legs_C
+  - first:
+      43: 4300034
+    second: TZ_M_head_C
+  - first:
+      43: 4300036
+    second: TZ_M_head_B
+  - first:
+      43: 4300038
+    second: TZ_M_head_I
+  - first:
+      43: 4300040
+    second: TZ_M_head_K
+  - first:
+      43: 4300042
+    second: TZ_M_legs_F
+  - first:
+      43: 4300044
+    second: TZ_M_head_H
+  - first:
+      43: 4300046
+    second: TZ_M_body_P
+  - first:
+      43: 4300048
+    second: TZ_M_head_L
+  - first:
+      43: 4300050
+    second: TZ_M_body_A
+  - first:
+      43: 4300052
+    second: TZ_M_body_G
+  - first:
+      43: 4300054
+    second: TZ_M_body_D
+  - first:
+      43: 4300056
+    second: TZ_M_body_J
+  - first:
+      43: 4300058
+    second: TZ_M_body_B
+  - first:
+      43: 4300060
+    second: TZ_M_legs_I
+  - first:
+      43: 4300062
+    second: TZ_M_body_K
+  - first:
+      43: 4300064
+    second: TZ_M_body_F
+  - first:
+      43: 4300066
+    second: TZ_M_body_N
+  - first:
+      43: 4300068
+    second: TZ_M_body_H
+  - first:
+      43: 4300070
+    second: TZ_M_body_I
+  - first:
+      43: 4300072
+    second: TZ_M_body_O
+  - first:
+      43: 4300074
+    second: TZ_M_body_M
+  - first:
+      43: 4300076
+    second: TZ_M_body_Q
+  - first:
+      43: 4300078
+    second: TZ_M_body_E
+  - first:
+      43: 4300080
+    second: TZ_M_body_L
+  - first:
+      43: 4300082
+    second: TZ_M_legs_G
+  - first:
+      43: 4300084
+    second: TZ_M_legs_H
+  - first:
+      43: 4300086
+    second: TZ_M_legs_J
+  - first:
+      43: 4300088
+    second: TZ_M_legs_L
+  - first:
+      43: 4300090
+    second: TZ_M_legs_M
+  - first:
+      43: 4300092
+    second: TZ_M_legs_N
+  - first:
+      43: 4300094
+    second: TZ_M_singlemesh_01
+  - first:
+      43: 4300096
+    second: TZ_M_infected_02
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Zombie_03_body
+  - first:
+      137: 13700002
+    second: Zombie_03_head
+  - first:
+      137: 13700004
+    second: Zombie_01_body
+  - first:
+      137: 13700006
+    second: Zombie_01_head
+  - first:
+      137: 13700008
+    second: TZ_M_body_A
+  - first:
+      137: 13700010
+    second: TZ_M_body_B
+  - first:
+      137: 13700012
+    second: TZ_M_body_C
+  - first:
+      137: 13700014
+    second: TZ_M_body_D
+  - first:
+      137: 13700016
+    second: TZ_M_body_E
+  - first:
+      137: 13700018
+    second: TZ_M_body_F
+  - first:
+      137: 13700020
+    second: TZ_M_body_G
+  - first:
+      137: 13700022
+    second: TZ_M_body_H
+  - first:
+      137: 13700024
+    second: TZ_M_body_I
+  - first:
+      137: 13700026
+    second: TZ_M_body_J
+  - first:
+      137: 13700028
+    second: TZ_M_body_K
+  - first:
+      137: 13700030
+    second: TZ_M_body_L
+  - first:
+      137: 13700032
+    second: TZ_M_body_M
+  - first:
+      137: 13700034
+    second: TZ_M_body_N
+  - first:
+      137: 13700036
+    second: TZ_M_body_O
+  - first:
+      137: 13700038
+    second: TZ_M_body_P
+  - first:
+      137: 13700040
+    second: TZ_M_body_Q
+  - first:
+      137: 13700042
+    second: TZ_M_head_A
+  - first:
+      137: 13700044
+    second: TZ_M_head_B
+  - first:
+      137: 13700046
+    second: TZ_M_head_C
+  - first:
+      137: 13700048
+    second: TZ_M_head_D
+  - first:
+      137: 13700050
+    second: TZ_M_head_E
+  - first:
+      137: 13700052
+    second: TZ_M_head_F
+  - first:
+      137: 13700054
+    second: TZ_M_head_G
+  - first:
+      137: 13700056
+    second: TZ_M_head_H
+  - first:
+      137: 13700058
+    second: TZ_M_head_I
+  - first:
+      137: 13700060
+    second: TZ_M_head_J
+  - first:
+      137: 13700062
+    second: TZ_M_head_K
+  - first:
+      137: 13700064
+    second: TZ_M_head_L
+  - first:
+      137: 13700066
+    second: TZ_M_legs_A
+  - first:
+      137: 13700068
+    second: TZ_M_legs_B
+  - first:
+      137: 13700070
+    second: TZ_M_legs_C
+  - first:
+      137: 13700072
+    second: TZ_M_legs_D
+  - first:
+      137: 13700074
+    second: TZ_M_legs_E
+  - first:
+      137: 13700076
+    second: TZ_M_legs_F
+  - first:
+      137: 13700078
+    second: TZ_M_legs_G
+  - first:
+      137: 13700080
+    second: TZ_M_legs_H
+  - first:
+      137: 13700082
+    second: TZ_M_legs_I
+  - first:
+      137: 13700084
+    second: TZ_M_legs_J
+  - first:
+      137: 13700086
+    second: TZ_M_legs_K
+  - first:
+      137: 13700088
+    second: TZ_M_legs_L
+  - first:
+      137: 13700090
+    second: TZ_M_legs_M
+  - first:
+      137: 13700092
+    second: TZ_M_legs_N
+  - first:
+      137: 13700094
+    second: TZ_M_singlemesh_01
+  - first:
+      137: 13700096
+    second: TZ_M_infected_02
+  externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 1
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 1.7
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 0
+    importVisibility: 0
     importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 0
-  copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human:
     - boneName: Bip001 Pelvis
       humanName: Hips
@@ -499,175 +1051,175 @@ ModelImporter:
         modified: 0
     skeleton:
     - name: Zombie_01_Tshirt(Clone)
+      parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Bip001
-      position: {x: 0, y: 0.75230575, z: -0.035138577}
+      parentName: 
+      position: {x: 0, y: 0.032484565, z: -0.0015172838}
       rotation: {x: -0.50000036, y: 0.49999964, z: 0.49999964, w: 0.50000036}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
-      transformModified: 1
     - name: Bip001 Footsteps
-      position: {x: -0, y: 0, z: -0.7481659}
+      parentName: 
+      position: {x: -0, y: 0, z: -0.032305803}
       rotation: {x: 0, y: 0, z: -0.7071063, w: 0.70710725}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Bip001 Pelvis
+      parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: -0.5, y: 0.5, z: 0.4999993, w: 0.5000007}
       scale: {x: 1, y: 0.99999994, z: 0.99999994}
-      transformModified: 1
     - name: Bip001 L Thigh
-      position: {x: 0.00000014533997, y: 0.00000016047954, z: 0.09161615}
+      parentName: 
+      position: {x: 0.0000000062757803, y: 0.0000000069295076, z: 0.003955986}
       rotation: {x: -0.025331493, y: 0.9987411, z: 0.03722315, w: 0.02211187}
       scale: {x: 1, y: 0.99999994, z: 0.99999994}
-      transformModified: 1
     - name: Bip001 L Calf
-      position: {x: -0.38307458, y: 7.56979e-10, z: 0}
+      parentName: 
+      position: {x: -0.01654116, y: 3.2686354e-11, z: 0}
       rotation: {x: -0.0000000055982405, y: 0.0000000033488283, z: 0.06865818, w: 0.99764025}
       scale: {x: 0.9999999, y: 0.9999999, z: 0.99999994}
-      transformModified: 1
     - name: Bip001 L Foot
-      position: {x: -0.27651867, y: 0, z: -0.000000012111664}
+      parentName: 
+      position: {x: -0.011940077, y: 0, z: -5.2298166e-10}
       rotation: {x: 0.038654193, y: 0.019504674, z: -0.043299988, w: 0.9981235}
       scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
-      transformModified: 1
     - name: Bip001 L Toe0
-      position: {x: -0.09068617, y: 0.13765235, z: 0}
+      parentName: 
+      position: {x: -0.003915829, y: 0.005943829, z: 0}
       rotation: {x: 0.000000015454312, y: -0.000000015454312, z: -0.7071068, w: 0.7071068}
       scale: {x: 0.99999994, y: 1, z: 0.99999994}
-      transformModified: 1
     - name: Bip001 L Toe0Nub
-      position: {x: -0.10814279, y: 0, z: 0}
+      parentName: 
+      position: {x: -0.0046696058, y: 0, z: 0}
       rotation: {x: 9.553441e-16, y: 1.75553e-30, z: 1, w: -1.8375893e-15}
       scale: {x: -0.99999994, y: -1, z: -0.99999994}
-      transformModified: 1
     - name: Bip001 R Thigh
-      position: {x: -0.00000014533997, y: -0.000000093865395, z: -0.09161615}
+      parentName: 
+      position: {x: -0.0000000062757803, y: -0.0000000040531085, z: -0.003955986}
       rotation: {x: -0.025331518, y: 0.99874103, z: -0.037224494, w: -0.022113374}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Bip001 R Calf
-      position: {x: -0.38307458, y: -0.000000003784895, z: 0}
+      parentName: 
+      position: {x: -0.01654116, y: -1.634318e-10, z: 0}
       rotation: {x: 0.000000002218417, y: -0.0000000017143783, z: 0.06865817, w: 0.99764025}
       scale: {x: 0.99999994, y: 0.99999994, z: 1.0000001}
-      transformModified: 1
     - name: Bip001 R Foot
-      position: {x: -0.27651864, y: -0.000000003027916, z: 0}
+      parentName: 
+      position: {x: -0.011940075, y: -1.3074541e-10, z: 0}
       rotation: {x: -0.03865419, y: -0.01950476, z: -0.04329998, w: 0.9981235}
       scale: {x: 1.0000001, y: 1, z: 1}
-      transformModified: 1
     - name: Bip001 R Toe0
-      position: {x: -0.09068617, y: 0.13765234, z: 0}
+      parentName: 
+      position: {x: -0.003915829, y: 0.0059438283, z: 0}
       rotation: {x: -0.00000001545431, y: 0.00000001545431, z: -0.7071068, w: 0.7071068}
       scale: {x: 0.99999994, y: 1, z: 0.99999994}
-      transformModified: 1
     - name: Bip001 R Toe0Nub
-      position: {x: -0.10814277, y: 0, z: 0}
+      parentName: 
+      position: {x: -0.0046696053, y: 0, z: 0}
       rotation: {x: 1.6970273e-30, y: -9.553415e-16, z: 1.776357e-15, w: 1}
       scale: {x: 0.99999994, y: 1, z: 0.99999994}
-      transformModified: 1
     - name: Bip001 Spine
-      position: {x: -0.10535868, y: -0.00026625677, z: 0.0000001464807}
+      parentName: 
+      position: {x: -0.004549388, y: -0.000011496968, z: 0.0000000063250374}
       rotation: {x: -0.000002080476, y: 0.000000693676, z: -0.000398159, w: 0.99999994}
       scale: {x: 1, y: 0.99999994, z: 0.99999994}
-      transformModified: 1
     - name: Bip001 L Clavicle
-      position: {x: -0.34237638, y: -0.000006482768, z: 0.050861847}
+      parentName: 
+      position: {x: -0.014783814, y: -0.00000027992593, z: 0.0021962146}
       rotation: {x: -0.6485895, y: -0.032980908, z: 0.7599215, w: 0.027626999}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Bip001 L UpperArm
-      position: {x: -0.14732702, y: 0, z: 0.00000019378662}
+      parentName: 
+      position: {x: -0.0063615814, y: 0, z: 0.0000000083677065}
       rotation: {x: 0.055043586, y: 0.043134447, z: 0.025298808, w: 0.99723095}
       scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
-      transformModified: 1
     - name: Bip001 L Forearm
-      position: {x: -0.22259489, y: -0.000000012111664, z: -0.00000009689331}
+      parentName: 
+      position: {x: -0.0096116485, y: -5.2298166e-10, z: -0.0000000041838533}
       rotation: {x: -0.0008453956, y: 0.013743244, z: 0.043576885, w: 0.9989552}
       scale: {x: 1, y: 1.0000001, z: 1}
-      transformModified: 1
     - name: Bip001 L Hand
-      position: {x: -0.25848353, y: -0.000000012111664, z: 0.00000009689331}
+      parentName: 
+      position: {x: -0.011161318, y: -5.2298166e-10, z: 0.0000000041838533}
       rotation: {x: -0.7067151, y: -0.012487219, z: -0.012477277, w: 0.7072781}
       scale: {x: 1, y: 1.0000001, z: 1.0000001}
-      transformModified: 1
     - name: Bip001 L Finger0
-      position: {x: -0.13959685, y: 0.008138263, z: -0.00019881297}
+      parentName: 
+      position: {x: -0.006027793, y: 0.00035141018, z: -0.000008584744}
       rotation: {x: -0.0004978854, y: -0.00047064188, z: -0.10585662, w: 0.9943812}
       scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
-      transformModified: 1
     - name: Bip001 L Finger0Nub
-      position: {x: -0.10129231, y: 0, z: 0.000000012111664}
+      parentName: 
+      position: {x: -0.0043738023, y: 0, z: 5.2298166e-10}
       rotation: {x: 0.0000000037252903, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Bip001 Neck
-      position: {x: -0.41026652, y: 0.014504432, z: 0.000000020210026}
+      parentName: 
+      position: {x: -0.01771531, y: 0.00062630145, z: 8.7266894e-10}
       rotation: {x: -4.0296144e-15, y: 0.00000059071755, z: -0.21297862, w: 0.97705686}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Bip001 Head
-      position: {x: -0.052858595, y: 0, z: -9.240466e-14}
+      parentName: 
+      position: {x: -0.0022824341, y: 0, z: -3.9900334e-15}
       rotation: {x: -3.1192412e-13, y: -0.00000040601455, z: 0.14638609, w: 0.98922753}
       scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
-      transformModified: 1
     - name: Bip001 HeadNub
-      position: {x: -0.21049064, y: 0, z: 0}
+      parentName: 
+      position: {x: -0.009088986, y: 0, z: 0}
       rotation: {x: 2.6645353e-14, y: -1.4210855e-14, z: -0.000000007450581, w: 1}
       scale: {x: 1, y: 1, z: 0.99999994}
-      transformModified: 1
     - name: Bip001 Ponytail1
-      position: {x: -0.031077657, y: 0.036283977, z: -0.00000003312707}
+      parentName: 
+      position: {x: -0.0013419335, y: 0.001566742, z: -0.0000000014304269}
       rotation: {x: 1.4029262e-12, y: 0.0000021421804, z: -0.772347, w: 0.63520086}
       scale: {x: 1, y: 1, z: 0.99999994}
-      transformModified: 1
     - name: Bip001 Ponytail1Nub
-      position: {x: -0.10757725, y: -0.00000009689331, z: -3.6961864e-13}
+      parentName: 
+      position: {x: -0.004645186, y: -0.0000000041838533, z: -1.5960134e-14}
       rotation: {x: 0.7073882, y: -0.7068252, z: -0.0000009802251, w: -0.0000009810061}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Bip001 R Clavicle
-      position: {x: -0.34237638, y: -0.000006198144, z: -0.050861835}
+      parentName: 
+      position: {x: -0.014783814, y: -0.0000002676359, z: -0.0021962144}
       rotation: {x: 0.64858955, y: 0.03297881, z: 0.7599216, w: 0.027625194}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Bip001 R UpperArm
-      position: {x: -0.147327, y: 0, z: -0.00000019378662}
+      parentName: 
+      position: {x: -0.00636158, y: 0, z: -0.0000000083677065}
       rotation: {x: -0.05504366, y: -0.043132696, z: 0.025298443, w: 0.997231}
       scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
-      transformModified: 1
     - name: Bip001 R Forearm
-      position: {x: -0.22259493, y: 0, z: 0}
+      parentName: 
+      position: {x: -0.009611649, y: 0, z: 0}
       rotation: {x: 0.00084537274, y: -0.013743596, z: 0.043576833, w: 0.9989552}
       scale: {x: 1, y: 1.0000001, z: 1}
-      transformModified: 1
     - name: Bip001 R Hand
-      position: {x: -0.2584834, y: 0, z: 0}
+      parentName: 
+      position: {x: -0.011161314, y: 0, z: 0}
       rotation: {x: 0.7067151, y: 0.012487214, z: -0.012477272, w: 0.7072781}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Bip001 R Finger0
-      position: {x: -0.1395968, y: 0.008138263, z: 0.00019883718}
+      parentName: 
+      position: {x: -0.006027791, y: 0.00035141018, z: 0.00000858579}
       rotation: {x: 0.0004979036, y: 0.00047079282, z: -0.10585655, w: 0.99438125}
       scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
-      transformModified: 1
     - name: Bip001 R Finger0Nub
-      position: {x: -0.101292364, y: -0.00000009689331, z: 0}
+      parentName: 
+      position: {x: -0.004373805, y: -0.0000000041838533, z: 0}
       rotation: {x: 0.0000000018626454, y: 5.551116e-17, z: 1, w: -0.000000029802326}
       scale: {x: -0.99999994, y: -0.99999994, z: -0.9999998}
-      transformModified: 1
     - name: Zombie_01_body
+      parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: Zombie_01_head
+      parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -675,11 +1227,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 0.04318
     rootMotionBoneName: 
     hasTranslationDoF: 1
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
