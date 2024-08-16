@@ -43,12 +43,7 @@ public class CodeScreen : MonoBehaviour, IInteractable
                         {
                               WasEnteredCorrectly = true;
                               OnUnlock.Invoke();
-                              Material newMaterial = Resources.Load<Material>("Materials/Unlock");
-                              if (newMaterial != null)
-                              {
-                                    if (renderer != null && renderer.materials.Length > 0)
-                                          renderer.materials[0] = newMaterial;
-                              }
+                              renderer.sharedMaterial = Resources.Load<Material>("Unlock");
                               enabled = false;
                         }
                   }

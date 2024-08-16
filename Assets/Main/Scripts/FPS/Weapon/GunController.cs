@@ -142,6 +142,7 @@ namespace FPS.Weapon
                         if(info.collider != null && info.collider.TryGetComponent(out IDamge ID))
                         {
                             ID.Damage(Equipped.Damage);
+                             Debug.Log(info.collider);
 
                         }
                   }

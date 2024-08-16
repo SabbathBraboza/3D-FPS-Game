@@ -121,4 +121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screen: {fileID: 0}
   pass: 1235
+  renderer: {fileID: 0}
   WasEnteredCorrectly: 0
+  OnUnlock:
+    m_PersistentCalls:
+      m_Calls: []
