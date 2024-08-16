@@ -1,19 +1,39 @@
+using Emp37.Utility;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class Player_Health : MonoBehaviour
 {
-    [SerializeField] private int health;
+    [Header("Value:")]
+    [SerializeField] private int MaxHp;
     [SerializeField] private float Interseity = 0f;
+
+    [Header("Refeneces:")]
     [SerializeField] private Volume volume;
+    [SerializeField] private Slider HealthBar;
+
+    [Header("ReadOnly:")]
+    [SerializeField, Readonly] private int CurrentHp; 
+
+    public UnityEvent OnDead;
+
+    private void Start()
+    {
+        CurrentHp = MaxHp;
+        HealthBar.value = CurrentHp;
+    }
 
     public void TakeDamage(int damage)
       {
-            StartCoroutine(BloodEffect());
-            health -= damage;
-            
-            if(health < 0) Destroy(gameObject);
+          damage =Mathf.Max(damage,0);
+          HealthBar.value = CurrentHp;
+          StartCoroutine(BloodEffect());
+          CurrentHp -= damage;
+
+        if (CurrentHp < 0) OnDead.Invoke();
     } 
 
     private IEnumerator BloodEffect()
