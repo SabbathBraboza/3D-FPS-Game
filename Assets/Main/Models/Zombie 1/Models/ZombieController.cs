@@ -1,3 +1,4 @@
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -11,6 +12,7 @@ public class ZombieController : MonoBehaviour
       [SerializeField] private Vector3 randomPosition;
       public float RandomMoveRadius = 60f;
       private bool Check => Agent.velocity.x == 0 && Agent.velocity.y == 0 && Agent.velocity.z == 0;
+      private bool isAtRandomPoint => !Agent.pathPending && Agent.remainingDistance <= Agent.stoppingDistance;
 
       [Header("REFERENCE")]
       [SerializeField] private NavMeshAgent Agent;
@@ -33,6 +35,7 @@ public class ZombieController : MonoBehaviour
             Target = GameObject.FindGameObjectWithTag("Player");
             spawnEnemy = GameObject.FindWithTag("Spawn");
             AttackDistance = 3;
+            RandomPointReached = true;
       }
       private void Update()
       {
@@ -44,21 +47,26 @@ public class ZombieController : MonoBehaviour
                   Move(Agent.velocity.magnitude);
                   RandomPointReached = false;
                   if ((dist <= AttackDistance))
-                  {
-                         Attack(true);
-                  }
+                     Attack(true);
+               
                   else
-                  {
-                        Attack(false);
-                  }
+                     Attack(false);
             }
             else
             {
-                  if (!RandomPointReached) randomPosition = GenerateRandomPosition();
-                  Agent.SetDestination(randomPosition);
+                  if (RandomPointReached)
+                  {
+                        randomPosition = GenerateRandomPosition();
+                        Agent.SetDestination(randomPosition);
+                        RandomPointReached = false;
+                  }
+                  if (isAtRandomPoint)
+                  {
+                        RandomPointReached = true;
+                  }
                   Attack(false);
             }
-            if (Check)
+            if (isAtRandomPoint && !follow)
             {
                   LookAt.transform.LookAt(Target.transform);
                   transform.rotation = Quaternion.Euler(0f, LookAt.transform.eulerAngles.y, 0f);

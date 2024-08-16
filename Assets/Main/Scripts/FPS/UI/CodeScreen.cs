@@ -9,7 +9,7 @@ public class CodeScreen : MonoBehaviour, IInteractable
       
       [SerializeField] private int pass;
 
-     private new readonly MeshRenderer renderer;
+     [SerializeField] private new  MeshRenderer renderer;
 
       [SerializeField] private bool WasEnteredCorrectly;
 
@@ -39,11 +39,16 @@ public class CodeScreen : MonoBehaviour, IInteractable
                                     return;
                               }
                         }
-                        if(screen.Check(pass))
+                        if (screen.Check(pass))
                         {
                               WasEnteredCorrectly = true;
                               OnUnlock.Invoke();
-                               renderer.sharedMaterial = Resources.Load<Material>("Material/Unlock");
+                              Material newMaterial = Resources.Load<Material>("Materials/Unlock");
+                              if (newMaterial != null)
+                              {
+                                    if (renderer != null && renderer.materials.Length > 0)
+                                          renderer.materials[0] = newMaterial;
+                              }
                               enabled = false;
                         }
                   }

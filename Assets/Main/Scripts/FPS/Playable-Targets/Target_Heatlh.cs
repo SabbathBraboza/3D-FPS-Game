@@ -14,8 +14,6 @@ public class Target_Heatlh : MonoBehaviour,IDamge
         HP -= damage;
          if(HP < damage)
          { 
-              PopUp.instance.ShowPopUp(transform.position,collisionDamage.ToString());
-
               Destroy(target);
       
               if(targets != null) targets.EnableSpawning();
