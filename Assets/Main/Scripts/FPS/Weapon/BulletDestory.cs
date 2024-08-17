@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class BulletDestory : MonoBehaviour
 {
+    [SerializeField] private float destroy;
       private void Update()
       {
-            Destroy(gameObject,0.5f);
+            Destroy(gameObject,destroy);
       }
 }

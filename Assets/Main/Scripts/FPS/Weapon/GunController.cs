@@ -1,7 +1,7 @@
 using Emp37.Utility;
 using TPS.Player;
-using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace FPS.Weapon
 {
@@ -138,14 +138,13 @@ namespace FPS.Weapon
                   Equipped.Fire();
                   Ray ray = camera.ViewportPointToRay(Center);
                   if(Physics.Raycast(ray,out RaycastHit info ,camera.farClipPlane))
-                  {
-                        if(info.collider != null && info.collider.TryGetComponent(out IDamge ID))
-                        {
-                            ID.Damage(Equipped.Damage);
-                             Debug.Log(info.collider);
-
-                        }
+                   {
+                    if (info.collider != null && info.collider.TryGetComponent(out IDamge ID))
+                    {
+                          ID.Damage(Equipped.Damage);
+                    }
                   }
+                  
             }
       }
 }

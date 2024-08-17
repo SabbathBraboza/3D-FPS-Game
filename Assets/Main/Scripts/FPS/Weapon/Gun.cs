@@ -20,7 +20,7 @@ namespace FPS.Weapon
 
         [SerializeField] private Transform ShellEjectionPoint;
         [SerializeField] private GameObject ShellPrefab;
-     
+
 
         [Header("Values:")]
         [SerializeField, Readonly] private int reserved;
@@ -66,7 +66,7 @@ namespace FPS.Weapon
                 return;
             }
             Muzzle.Play();
-            Current--;
+            Current--; 
             OnFire.Invoke(Extensions.Remap(Current, 0f, MagazineSize, 0f, 1f));
         }
 
