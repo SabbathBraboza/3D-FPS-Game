@@ -41,11 +41,8 @@ public class Door : MonoBehaviour, IInteractable
             anime = GetComponent<Animator>();
       }
 
-      private void OnValidate()
-      {
-            ManageType = type;
-      }
-
+      private void OnValidate() => ManageType = type;
+      
       public void OnEnter()
       {
             if (type != Type.Proximity || locked) return;

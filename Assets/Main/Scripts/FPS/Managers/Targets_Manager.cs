@@ -1,7 +1,7 @@
-using FPS.Player;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class Targets_Manager : MonoBehaviour
@@ -13,27 +13,37 @@ public class Targets_Manager : MonoBehaviour
 
     [Header("UI")]
     [SerializeField] private Text WaveText;
-    [SerializeField] private Text RemainingTargetText;
 
     [Header("Gameobject:")]
+    [SerializeField] private AudioSource Source;
+    [SerializeField] private AudioClip clip;
     [SerializeField] private GameObject TargetPerfab;
     [SerializeField] private Transform[] SpawnPoints;
-    private List<GameObject> spawnList = new List<GameObject>();
 
+    [Header("Unity Event:")]
+    public UnityEvent Play;
+
+    private List<GameObject> spawnList = new List<GameObject>();
     private Targets targets;
     private int WaveNumber = 0;
     private bool IsSpawning = false;
 
+    private void OnDestroy()
+    {
+        Play.RemoveAllListeners();
+    }
+
     private void Start()
     {
         UpdateWaveUI();
-        UpdateRemainingTargetUI();
         StartCoroutine(SpawnWave());
     }
     private void Update()
     {
         if (!IsSpawning && AllTargetDestroyed())
+        {
             StartCoroutine(SpawnWave());
+        }
     }
 
     private IEnumerator SpawnWave()
@@ -58,7 +68,8 @@ public class Targets_Manager : MonoBehaviour
         Debug.Log("All Waves Have Ended GG");
 
         WaveText.gameObject.SetActive(false);
-        RemainingTargetText.gameObject.SetActive(false);
+        Play.Invoke();
+        PlayAudio();
     }
 
     private void SpawnTarget()
@@ -69,13 +80,11 @@ public class Targets_Manager : MonoBehaviour
         GameObject newtarget = Instantiate(TargetPerfab, SpawnPoint.position, SpawnPoint.rotation);
         spawnList.Add(newtarget);
 
-        UpdateRemainingTargetUI();
     }
 
     private bool AllTargetDestroyed()
     {
         spawnList.RemoveAll(targets => targets == null);
-        UpdateRemainingTargetUI();
         return spawnList.Count == 0;
     }
 
@@ -90,11 +99,9 @@ public class Targets_Manager : MonoBehaviour
         if(WaveText != null)
           WaveText.text = "Wave: " + WaveNumber;
     }
-
-    private void UpdateRemainingTargetUI()
+    
+    private void PlayAudio()
     {
-        if(RemainingTargetText != null)
-           RemainingTargetText.text = "Target Spawned: " + spawnList.Count;
+        Source.PlayOneShot(clip);
     }
-
 }
