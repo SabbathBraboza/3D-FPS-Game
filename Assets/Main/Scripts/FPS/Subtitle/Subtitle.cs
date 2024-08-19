@@ -2,7 +2,6 @@ using System.Collections;
 using System.Text;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class Subtitle : Syc
 {

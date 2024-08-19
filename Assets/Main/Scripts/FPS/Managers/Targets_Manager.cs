@@ -15,8 +15,6 @@ public class Targets_Manager : MonoBehaviour
     [SerializeField] private Text WaveText;
 
     [Header("Gameobject:")]
-    [SerializeField] private AudioSource Source;
-    [SerializeField] private AudioClip clip;
     [SerializeField] private GameObject TargetPerfab;
     [SerializeField] private Transform[] SpawnPoints;
 
@@ -69,7 +67,6 @@ public class Targets_Manager : MonoBehaviour
 
         WaveText.gameObject.SetActive(false);
         Play.Invoke();
-        PlayAudio();
     }
 
     private void SpawnTarget()
@@ -79,7 +76,6 @@ public class Targets_Manager : MonoBehaviour
 
         GameObject newtarget = Instantiate(TargetPerfab, SpawnPoint.position, SpawnPoint.rotation);
         spawnList.Add(newtarget);
-
     }
 
     private bool AllTargetDestroyed()
@@ -98,10 +94,5 @@ public class Targets_Manager : MonoBehaviour
     {
         if(WaveText != null)
           WaveText.text = "Wave: " + WaveNumber;
-    }
-    
-    private void PlayAudio()
-    {
-        Source.PlayOneShot(clip);
     }
 }
