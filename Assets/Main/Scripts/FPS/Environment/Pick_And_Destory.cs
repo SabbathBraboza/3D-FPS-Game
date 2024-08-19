@@ -1,13 +1,17 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Pick_And_Destory : MonoBehaviour,IInteractable
 {
-      [SerializeField] private GameObject text;
+    [Header("UI:")]
+    [SerializeField] private GameObject text;
 
-      [SerializeField] private AudioClip Voice;
-      [SerializeField] private AudioSource source;
+    [Header("Audio:")]
+    [SerializeField] private AudioClip Voice;
+    [SerializeField] private AudioSource source;
 
-    [SerializeField] private GameObject Mission2;
+     [Header("Unity Event:")]
+     public UnityEvent Active;
     
       public void OnInteract()
       {
@@ -17,10 +21,7 @@ public class Pick_And_Destory : MonoBehaviour,IInteractable
                   source.PlayOneShot(Voice);
                   Destroy(gameObject);
 
-            if(Mission2 != null)
-            {
-                Mission2.SetActive(true);
-            }
+                   Active.Invoke();
            }
       }
 
