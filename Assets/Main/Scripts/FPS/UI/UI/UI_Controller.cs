@@ -8,4 +8,10 @@ public class UI_Controller : MonoBehaviour
     {
         SceneManager.LoadScene("NewMap");
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+        Debug.Log("Qutting");
+    }
 }
