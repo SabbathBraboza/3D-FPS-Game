@@ -13,7 +13,6 @@ public class PausedUI : MonoBehaviour
            PausePanel.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0f;
-            
         }  
     }
 
