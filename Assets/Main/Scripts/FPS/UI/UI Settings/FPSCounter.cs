@@ -8,7 +8,6 @@ public class FPSCounter : Base<bool>
     public override void OnvalueChange(bool Value)
     {
         Settings.FPSCounter = Value;
-        
     }
 
     protected override void Initialize()
