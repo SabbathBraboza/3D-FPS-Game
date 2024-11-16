@@ -5,20 +5,34 @@ public class FPSText : MonoBehaviour
 {
     [SerializeField] private TMP_Text Counter;
 
-    [SerializeField] private float UpdateRate = 0.1f;
-    private float elapsed;
+    [SerializeField,Range(0f,0.1f)] private float UpdateInterval = 0.088f;
+    private float TimeLeft;
 
-    private void Update()
+    private void Start() => TimeLeft = UpdateInterval;
+
+    private void LateUpdate()
     {
-        if (elapsed < UpdateRate)
+        if (TimeLeft < UpdateInterval)
         {
-            elapsed += Time.deltaTime;
-
+            TimeLeft += Time.deltaTime;
         }
         else
         {
-            Counter.text = $"{1f / Time.smoothDeltaTime:000} FPS";
-            elapsed = 0;
+            float Fps = 1f / Time.smoothDeltaTime;
+            Counter.text = $"FPS:{Fps:F0}";
+            if (Fps < 30)
+            {
+                Counter.color = Color.red;
+            }
+            else if (Fps >= 30 && Fps <= 60)
+            {
+                Counter.color = Color.yellow;
+            }
+            else if (Fps > 60)
+            {
+                Counter.color = Color.green;
+            }
+            TimeLeft = 0f;
         }
     }
 }
